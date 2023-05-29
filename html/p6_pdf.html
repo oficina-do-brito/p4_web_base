@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+    
+</head>
+<body>
+
+    <div id="documento_todo">
+        <h1>Gerar html com conteudo html</h1>
+
+        <input type="button" onclick="gerarPdf()" value="Gerar PDF"/>
+    </div>
+
+
+    <script>
+        function gerarPdf(){
+            var documento = new jsPDF("p", "mm", "a4");
+
+            // Use the addPage() method to add new page to PDF.
+            documento.addPage();
+            // Specify the content in text() method of jsPDF object.
+            documento.text(20, 20, `${document.getElementById("documento_todo").DOCUMENT_FRAGMENT_NODE} \n <h1>Gerar html com conteudo html</h1>`);
+            // Save the PDF
+
+            // documento.html(document.body);
+            //Save - gerar pdf
+            documento.save('novo.pdf');
+        }
+    </script>
+</body>
+</html>
