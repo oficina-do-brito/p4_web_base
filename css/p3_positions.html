@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="wclassth=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .posicao{
+            width: 80px;
+            height: 80px;
+            margin-left: 400px;
+            background: red;
+        }
+        .fix{
+            width: 80px;
+            height: 80px;
+            background: rgb(238, 73, 7);
+            position: fixed;
+        }
+        .ab{
+            width: 80px;
+            height: 80px;
+            background: rgb(217, 240, 15);
+            position: absolute;
+        }
+        .rela{
+            width: 80px;
+            height: 80px;
+            background: rgb(87, 223, 9);
+            position: relative;
+        }
+        .stic{
+            width: 80px;
+            height: 80px;
+            margin: 20px;
+            background: rgb(38, 0, 255);
+            position: sticky;
+        }
+        .divisona{
+            width: 800px;
+            height: 1800px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Posição</h1>
+    <p>Por padrão todo elemento ja vem com uma posição estatica, isso quer dizer que por padrão
+    quando colocamos um elemento dentro do html o elemento ficara 1 abaixo do outro:</p>
+    
+    <ol>Além do position: static temos o:
+    
+        <li>fixed : congela o elemento na tela, fica fixado em relação a janela;</li>
+        <li>absolute: que fixa em algum lugar da tela, em relação a um ancestral que também deve estar posicionado, o ponto de orientação dele é o left-top do pai ou ancestral;</li>
+        <li>relative: relativo a outro elemento pai.</li>
+        <li>sticky: pra quando rolar o scroll ficar grudado na parte de cima da tela</li>
+    </ol>
+    <div class="posicao"></div>
+    <div class="posicao fix"></div>
+    <div class="posicao ab"></div>
+    <div class="posicao rela"></div>
+    <div class="posicao stic"></div>
+    <div class="divisona"></div>
+</body>
+</html>
