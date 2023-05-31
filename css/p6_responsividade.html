@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            margin: 30%;
+            width: 100%;
+            height: 50%;
+            
+            @media only screen and (max-width: 320px) {
+                background-color: red;
+            }
+            @media only screen and (min-width: 321px) and (max-width: 480px) {
+                background-color: blue;
+            }
+            @media only screen and (min-width: 481px) and (max-width: 768px) {
+                background-color: orange;
+            }
+            @media only screen and (min-width: 769px) and (max-width: 1024px) {
+                background-color: yellow;
+            }
+            @media only screen and (min-width: 1025px) and (max-width: 1200px) {
+                background-color: lightblue;
+            }
+            @media only screen and (min-width: 1201px) {
+                background-color: black;
+            }
+        }
+    </style>
+</head>
+<body>
+    <p>Responsividade é basicamente a capacidade de adaptação de um layout para exibição em varios tamnhos de telas
+    ou em diferentes disposivos, ex: celulares, desktop, tablet e televisões
+    </p>
+    <p> Para resolução desses problemas de apdaptação o css os oferece o mediaquery</p>
+
+    <div></div>
+</body>
+</html>
