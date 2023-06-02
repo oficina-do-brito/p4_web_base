@@ -101,17 +101,97 @@
             <li>servidores com node + apche, Nginx</li>
             <li>Manipulação de dados em tabela excel com xlsx transferir para um db ou vice versa</li>
             <li>React Native para mobile</li>
+            <li>Criação de applicações desktops com vue e electron</li>
         </ul>
 
     </section>
-       
+
+    <section>
+        <h2>javascript</h2>
+        <iframe allow="autoplay:true;" src="https://drive.google.com/file/d/1cVgEGOQG-dIeX5P1SUrw4IdMUCR1drQQ/preview" width="300" height="180" style="border:1px solid black;"></iframe>
+        <ul>
+            <h3>Basico sobre esse mundo</h3>
+            <p>Como vimos anteriormente  basicamente essa linguagem na utilidade  nos permite fazer quase qualquer coisa que sejam feitas em outras linguagens, devido a sua expansão de ambiente 
+            de reprodução da mesma consolidada pelo nodejs. Então simbora para o basico sobre mundo:
+            </p>
+            <ul>
+                <li> Para construção de apps com envolvendo essa linguagem o motor de giro utilizado é o nodejs</li>
+                <li> O gerenciador de pacotes mais comum utilizado o "npm" embora tenha yarn e outros que surgem a cada dia </li>
+                <li> Dependencias e bibliotecas são armazenadas em pasta padrão "node_modules" </li>
+                <li> Como em outras linguagens como python que armazena versão e info das bibliotecas em arquivos como requirements.txt, no javascript as versões e vibliotecas utilizadas em um
+                projeto ficam descritas no package.json
+                </li>
+            </ul>
+            <br/>
+            <h3>Basico da sintax</h3>
+            <br/>
+            <h4>Tipo de dados</h4>
+
+            <h5>primitivos</h5>
+
+            <li>String.</li>
+            <li>Number.</li>
+            <li>Boolean.</li>
+            <li>Null.</li>
+            <li>undefined.</li>
+            <li>Symbol</li>
+
+            <h5>Mais tipo que podem ser assumidos</h5>
+
+            <li>object</li>
+            <li>escape do es6 -> any</li>
+
+
+            <h4>Comentarios</h4>
+            <p>Talvez você nem considere importante comentar codigo, porem quando trabalhado com javascript puro isso acaba facilitando nossa vida ja que toda variavel é considerada <em>any</em>.
+                É importante lembrar que embora o typescript quase que elimine a necessidade de comentarios, mais ainda sim dependendo da logica do 
+                programa é importante usar esse recurso para descomplicar um pouco o entendimento dessa logica.
+            </p>
+            <p>comentarios de uma unica linha no javascript é feito basicamente usando barra dupla // na linha de codigo, 
+                quando no vscode os atalhos variam entre Crtl+/ e Crtl+; dependendo do SO do usuario.
+            </p>
+            <pre>
+                <code>
+                    // const nome = "maria";
+                </code>
+            </pre>
+            <p>ja comentarios de multiplas linhas, que são mais utilizados inclusive para documentar devem ser feitos apartir da abertura /** e fechando o comeantario com */</p>
+            <p>Normalmente no vscode é oferecido ao usuario um padrão de tags de marcação que funciona dentro do comentario, tornando melhor tanto a descrição do comentario
+            quanto a visualização.
+            <br>
+            /**
+            * @description Do que se trata a função, qual a logica<br>
+            * @param {number} nota1 - parametro 1<br>
+            * @param {number} nota2  - parametro 2<br>
+            * @returns {number}      - retorno <br>
+            * Ainda tem referencias de chamada de outras funçoes, caso necessario<br>
+            */<br>
+            O detalhe aqui é que comentarios de documentação devem ser colocado logo acima da função na qual se trata, ou seja acima da definição daquela função ou metodo etc...
+            </p>
+            <pre>
+                <code>
+                    /**
+                    * @description Uma função que reccebe como parametro  numeros e realiza sua soma,
+                    * @param {number} nota1
+                    * @param {number} nota2
+                    * @returns {number}
+                    * Ainda tem referencias de chamada de outras funçoes, caso necessario
+                    */
+                    const funcao = (nota1,nota2)=> nota1+nota2
+                    console.log(funcao(4,7))
+                </code>
+            </pre>
+            <h4>Variaveis no js</h4>
+
+
+    </section>
+    <script>
+        const nome = "maria";
+        const joana = "maria";
+    </script>
     
-
-
-
-
-        <br />
-        <script>
+    <br />
+    <script>
             $('button').click(function(){
             var txt = document.getElementsByTagName("code")[0];
 
@@ -119,7 +199,6 @@
             $("textarea.hide").select();
             document.execCommand('copy');
             });
-        </script>
-    </section>
+    </script>
 </body>
 </html>
