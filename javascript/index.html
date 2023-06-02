@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>Javascript</h1>
+    <p>A linguagem de programação mais utilizada no mundo</p>
+    <p><b>Atenção</b> Nesse documento será demonstrado só a parte dos meus conhecimentos e curiosidades sobre a linguagem, e vale lembrar que eu sou um escritor de scripts
+    com quase nenhuma experiencia, sou jr ainda estou aprendendo a ligar o pc então considere isso e se achar alguma informação duvidosa pesquise sobre.
+    </p>
+    <section>
+        <h2>Histórico</h2>
+        <p>
+            Uma coisa que quem estuda tecnologia está cansado de saber é que tão importante quanto cair de cara na prática e sair codificando,
+             é estudar a história de uma tecnologia e os conceitos.
+
+        </p>
+        <p>Vamos então explanar conhecimentos sobre essa linguagem <em>cedosa</em> por meio de topicos:</p>
+        <ul>
+            <li>Essa linguagem foi especificamente criada para navegadores web, especificamente o navegador Netscape da empresa Netscape (foda né mamrketeiro).
+            Bem de forma resumida por volta de 1996, o quê os programadores tinham na web é que eles utilizavam a web para compartinharem informaçoes de forma mais estaticas no html, 
+            até que alguem achou aquilo sem graça e começou a pensar em criar uma linguagem que pudesse interargir com elementos do html e moficar em tempo real ou no caso fazer
+            a validação de algo quase que em tempo real, não sei de quem foi a ideia Foda-se mas o  Brendan Eich que foi o cara que criou a linguagem e com foco de resolver esse
+            problema validar formularios.
+            </li><br />
+            <li>Essa linguagem então nasceu com objetivo claro e é uma linguagem de programação interpretada: Ou seja seu código fonte é executado por um programa de computador denominado <b>interpretador</b> e o que esse danado de interpretador traria de beneficio?</li>
+            <ol>
+                <li>Uma vez interpretada pelos navegadores, os mesmos tornaria possivel manipular estruturas dos html e tals</li>
+                <li>Outros interpretadores como <em>Node.js</em> que no tempo nem sonhava em ser criado, mais tarde seria criado, tornando  a linguagem popular e com maior capacidade
+                de resolução de problemas </li><br />
+            </ol>
+            <li>O js  é uma linguagem de alto nível: tem entendimento mais próximo da realidade, essa característica geralmente define se ela é Orientada a Objetos (OO) 
+            ou não, e ela é multi paradigma: "lembrando que 1 paradigma é uma forma de classificar determinada linguagem com base no seu funcionamento", logo se você pensou,
+            então se ela é multi paradigma, ela consegue funcionar de 2 formas. De fato é isso! O js utiliza tanto do paradigma OO quanto funcional.</li><br />
+            <li>E aí em que isso afeta? Afeta que podemos usar o melhor dos 2 mundos o "OO" que por padrão as variáveis são mutáveis e o 
+            paradigma funcional onde geralmente as linguagens que tem essa característica de serem funcional tem variáveis imutáveis . 
+            Podemos então para exemplificar construir algo no paradigma funcional e no OO:
+            <br/>
+            *A OO determina que o código deve ser modelado de forma a se aproximar ao mundo real, e que o mesmo em execução no
+            computador tenha tal modelagem representada por uma estrutura de objetos, características e ações. 
+            Tais objetos podem interagir uns com os outros modificando o estado do programa até que resultem nas saídas esperadas.
+
+            Para viabilizar essa estrutura, OO propõe o uso de Classes, Atributos e Métodos, 
+            unido a características como Abstração, Encapsulamento, Herança e Polimorfismo.
+             Os objetos são instâncias das classes e possuem um estado durante a execução do software 
+             podendo as mesmas serem modificadas, persistidas e recarregadas de acordo com a lógica implementada.
+            <pre>
+                <code>
+                    Object.defineProperty(this, "funcao", {
+                        enumerable: true,
+                        value: funcao,
+                        writable: false,
+                      });
+                     
+                </code>
+            </pre>
+            <button>Copie</button>
+            <textarea class="hide"></textarea>
+            <br/>
+
+            * O paradigma funcional é derivado do declarativo, onde o objetivo é declarar ao computador o resultado esperado, e não o passo a passo para construção deste resultado.
+            Essa forma de compor o código traz duas características que a tornam bastante diferente das demais, que são a imutabilidade e por consequência a não mudança de estado
+             do software.
+             <pre>
+                <code>
+                    const funcao = (nota1,nota2) => nota1+nota2
+                </code>
+            </pre>
+            </li>
+            <li> E ai o que danado essas caracteristicas nos tras de bom ? Bem essa caracteristica tras coisas muitos boas para a linguagem por que na verdade o fato do javascript ser
+                uma linguagem fracamente tipada acabou que ocasionava muitos erros e dores de cabeça aos programadores que passavam a maior parte do tempo debugando codigo em vez de programando,
+                logo alguem percebeu esse problema e novamente caimos na mesma tecla de que programadores resolvem problemas, e então surgiu o <em>typescript</em> uma extenção do js ou superset do javascript que 
+                acrescenta typagem estatica a linguagem e alem disso novos recursos, e isso tudo graça a caracteristica do paradigma funcional que garante a imutabilidade do tipo de dados, esse tipo de dados é 
+                nada mais que uma interface provida com essa extenção do js, o typescript. Ja considerada como linguagem o typescript é transpilado para produção e se torna javascript 
+                que é interpretado pelo node.js e nos permite resolver muitos problemas com essa linguagem como:
+
+            </li>
+        </ul>
+        <br/>
+    <section>
+        <h2>Problemas que podem ser resolvidos a partir do js</h2>
+        <ul>
+            <h3>Ferramentas e Problemas focados na web</h3>
+            <li>Dinamicidade e facilidade de trabalho com elementos DOM ->  jQuery: é uma biblioteca livre que contém funções da linguagem de programação JavaScript que interage com páginas em HTML, desenvolvida para simplificar os scripts executados/interpretados no navegador de internet do usuário</li>
+            <li>Controle de exibição de arquivos de audio video</li>
+            <li>Facilidade no uso de de busca de dados na rede com Fetch API, Axios</li>
+            <li>Frameworks que fazem SPA como Angular,Vue </li>
+            <li>criação de SPA com biblioteca react</li>
+            <li>renderização do lado do servidor e geração de sites estáticos para aplicativos da web com framework NEXT.js</li>
+            <li>geração de pdf com <a href="https://react-pdf.org/" target="_blank">react-pdf </a></li>
+            <li> js no css, deixando mais dinamico e poderoso com <a href="https://styled-components.com/" target="_blank">styled-components</a></li>
+
+            <br>
+            <h3>Ferramentas e Problemas locais</h3>
+            <li>servidores com node + apche, Nginx</li>
+            <li>Manipulação de dados em tabela excel com xlsx transferir para um db ou vice versa</li>
+            <li>React Native para mobile</li>
+        </ul>
+
+    </section>
+       
+    
+
+
+
+
+        <br />
+        <script>
+            $('button').click(function(){
+            var txt = document.getElementsByTagName("code")[0];
+
+            $('textarea.hide').text( txt.outerHTML) ;
+            $("textarea.hide").select();
+            document.execCommand('copy');
+            });
+        </script>
+    </section>
+</body>
+</html>
