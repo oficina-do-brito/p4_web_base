@@ -18,7 +18,7 @@ document.getElementById('funcoes').innerHTML = `
             };                          
             </code>
         </pre>
-        <li><b>errow function </b>: são basicamente functions anonimas com sintax enxuta , pois é se ja estudou vue ja conhecce o conceito . A outra diferença de funçoes normais é que aqui o this. tem o ccomportamento diferente</li>
+        <li><b>arrow function </b>: são basicamente functions anonimas com sintax enxuta , pois é se ja estudou vue ja conhecce o conceito . A outra diferença de funçoes normais é que aqui o this. tem o ccomportamento diferente</li>
         <pre>
             <code>
             const somanova = (num1, num2) => num1 + num2;                          
@@ -61,12 +61,12 @@ document.getElementById('funcoes').innerHTML = `
             jarbas.r();            
             </code>
         </pre>
-        <p>Note especificamente dentro da errow function o this aponta undefined isso acontece por que  o this. não é vincculado a quem chama.
+        <p>Note especificamente dentro da arrow function o this aponta undefined isso acontece por que  o this. não é vincculado a quem chama.
             Em funções regulares, a this palavra-chave representa o objeto que chamou a função, que pode ser a janela, o documento, um botão ou qualquer outra coisa.
             Com funções de seta, a this palavra-chave sempre representa o objeto que definiu a função de seta.
         </p>
-        <h5>Mas e se a gente quizer concertar tem como fazer vincular o this do objeto ao this chamado dentro da errow function?</h5>
-        <p>Sim, isso se chama binding, é uma gambiarra pq a gente deve saber desse efeito de utilizar errow function mais vamos la, na definição da classe de 1 objeto fazer o bind do this</p>
+        <h5>Mas e se a gente quizer concertar tem como fazer vincular o this do objeto ao this chamado dentro da arrow function?</h5>
+        <p>Sim, isso se chama binding, é uma gambiarra pq a gente deve saber desse efeito de utilizar arrow function mais vamos la, na definição da classe de 1 objeto fazer o bind do this</p>
         <pre>
             <code>
             this.r = this.r.bind(this),          
