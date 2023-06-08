@@ -231,7 +231,7 @@ E por último, podemos declarar tipos genéricos através do JSDoc, para isto de
         </code>
     </pre>
     <ul>
-        <li>tipagem de onbjetos</li>
+        <li><b>tipagem de objetos</b></li>
         <p>é comum utilizarmos functions para criar esses objetos, que terão atributos e métodos e com o typescript a utilização deles ficam cada vex mais claros:</p>
         <pre>
         <code>
@@ -253,7 +253,7 @@ E por último, podemos declarar tipos genéricos através do JSDoc, para isto de
         </code>
     </pre>
 
-        <li>Classes e onjetos</li>
+        <li><b>Classes e objetos</b></li>
         <p>As classes no typescript são muito semelhantes às classes do java, possuem modificadores de acesso, construtores ,get e setters , permite herança e etc, embora tenham diferenças na forma de escrita.
         </br>Para criar uma classe no typescript  da forma convencional:
         </p>
@@ -291,7 +291,7 @@ E por último, podemos declarar tipos genéricos através do JSDoc, para isto de
           </code>
       </pre>
        
-        <li>Herança </li>
+        <li><b>Herança</b></li>
         <p>Para fazermos uma classe Herdar de outra utilizamos a palavra chave extends
         logo a classe filha herda todos os atributos e comportamentos da classe mãe ex:
         </p>
@@ -350,7 +350,7 @@ E por último, podemos declarar tipos genéricos através do JSDoc, para isto de
        super.getNameUsuario();
        </p>
 
-       <li>Metodos estaticos e atributos</li>
+       <li><b>Metodos estaticos e atributos</b></li>
        <p>São métodos estaticos aqueles que podem ser acessados sem instanciar a classe, usamos a palavra "static" nomeMetodo(){}
        Atributos funcionam com a mesma lógica;
        </p>
@@ -363,8 +363,8 @@ E por último, podemos declarar tipos genéricos através do JSDoc, para isto de
           </code>
         </pre>
 
-        <li>Interfaces</li>
-        <p>São utilizadas para criar tipo ou contrato com quem implementa elas:
+        <li><b>Interfaces</b></li>
+        <p>Deve conter Nomenclatura seguindo padrão INome...São utilizadas para criar tipo ou contrato com quem implementa elas:
         </p>
           <pre>
             <code>
@@ -389,10 +389,58 @@ E por último, podemos declarar tipos genéricos através do JSDoc, para isto de
            
             </code>
           </pre>
+          <li><b>Orientação a objeto</b></li>
+          <p> Quando criamos classes e fizemos uso de herança como nos exemplos acima ja entramos no assunto de OO e ja fomos beneficiados com uma das principais vantagem dela que é a reutilização de codigo.</p>
+          <p>Outras vantagens:</p>
+          <li>Boas praticas de programação</li>
+          <li>Segurança - No acesso a informação, por exemplo o uso de modificadores de visibilidade, a atributos, metodos de acesso</li>
+          <li>Facilita a manutenção - Mais organização, direto ao ponto </li>
+
+          <p>Começaremos estudar poo no typescript com a demonstração de um padrão de escrita de atributos, é basicamente no ts um atributo privado deve sempre ser iniciado 
+          com um underline ex : private _nome:string </p>
+          <p>Isso é bem util ao fazer get e ao utilizarmos ele em nossos codigos com codigo enchuto </p>
+            <pre>
+              <code>
+              class Pessoa{
+                constructor(
+                    private _nome:string,
+                    private _idade:number,
+                    private _altura:number){}
+            
+                public  get nome(){
+                    return this._nome;
+                }
+            
+              }
+            
+            const p1 = new Pessoa("mariscleuda",53,1.89);
+            console.log(p1.nome);
+              </code>
+            </pre>
+
+            <h4>Classes que não sejam extendidas</h4>
+            <p>No java quando queremos que uma classe não possa ser extendidas por denais classes a gente usa a palavra reservda final. E no typescript como fazemos?</p>
+            <p>No typescript a gente coloca o construtor como privado, simplesmente</p>
+            <pre>
+              <code>
+              class Admin{
+                private constructor(
+                    private _nome:string,
+                    private _idade:number,
+                    private _altura:number){}
+            
+                public  get nome(){
+                    return this._nome;
+                }
+            
+              }
+              </code>
+            </pre>
+            <h4>Sobescrita de metodos</h4>
     </ul>
 `;
 /**
- * <li></li>
+ * <li><b></b></li>
     <p></p>
       <pre>
         <code>
