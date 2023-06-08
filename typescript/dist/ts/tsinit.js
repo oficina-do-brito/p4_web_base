@@ -216,19 +216,187 @@ E por último, podemos declarar tipos genéricos através do JSDoc, para isto de
     <a href="https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html" target="_blank">mais sobre em </a>
     <br/>
     <h2>Adicionando tipagem</h2>
+    <p>A tipagem no typescript é sempre adionada apos o operador ":" por exemplo  uma função, fazemos a tipagem dos parametros e retorno alem das variaveis que estão no seu escopo:</p>
+    <pre>
+        <code>
+            // 1 functionque não retorna
+            function imprimirNoConsole(...nomes:string[]):void{
+              console.log(nomes);
+            }
+
+            // 1 function com retorno 
+            function soma(num1:number,num2:number): number{
+              return num1+num2;
+            }
+        </code>
+    </pre>
+    <ul>
+        <li>tipagem de onbjetos</li>
+        <p>é comum utilizarmos functions para criar esses objetos, que terão atributos e métodos e com o typescript a utilização deles ficam cada vex mais claros:</p>
+        <pre>
+        <code>
+        function criaPessoa(nome: string, idade: number, altura: number) {
+          const Pessoa: { nome: string; idade: number; altura: number; falar(): void } =
+            {
+              nome: nome,
+              idade: idade,
+              altura: altura,
+              falar() {
+                console.log(\`Olá, meu nome é \${this.nome} e tenho \${this.idade} anos\`);
+              },
+            };
+          return Pessoa;
+         }
+         console.log(typeof criaPessoa("João", 27, 1.75));
+         const pessoa2 = criaPessoa("clodoaldo", 38, 1.76);
+         console.log(pessoa2.idade);
+        </code>
+    </pre>
+
+        <li>Classes e onjetos</li>
+        <p>As classes no typescript são muito semelhantes às classes do java, possuem modificadores de acesso, construtores ,get e setters , permite herança e etc, embora tenham diferenças na forma de escrita.
+        </br>Para criar uma classe no typescript  da forma convencional:
+        </p>
+        <pre>
+          <code>
+          /exportar a classe Pessoa pq  vamos querer utilizar fora desse módulo
+          export class Pessoa{
+             private readonly id : number;//não pode ser alterado
+             private nome: string;
+             private telefone: string;
+             private email: string;
+             private senha: string;
+             private endereco: string;
+             private readonly colaboradores: Colaboradores[] = [];//não pode ser alterado
+          
+             constructor(id:number,nome: string, telefone: string, email: string, senha: string, endereco: string){
+                 this.id=id;
+                 this.nome = nome;
+                 this.telefone = telefone;
+                 this.email = email;
+                 this.senha = senha;
+                 this.endereco = endereco;
+             }  
+            }
+          
+          </code>
+        </pre>
+          <p>Porém podemos criar de uma forma mais reduzida (syntax enchuta)que é colocando os atributos diretamente no construtor:</p>
+        <pre>
+          <code>
+          export class Colaboradores{
+            constructor(private readonly id:number,private nome: string,private telefone: string){}
+         }
+         
+          </code>
+      </pre>
+       
+        <li>Herança </li>
+        <p>Para fazermos uma classe Herdar de outra utilizamos a palavra chave extends
+        logo a classe filha herda todos os atributos e comportamentos da classe mãe ex:
+        </p>
+        <pre>
+          <code>
+            class Pessoa {
+              constructor(private _nome: string, private idade: number, private sexo: string, private _cpf: string) { }
+            
+              public geNome(): string {
+                  return this._nome;
+              }
+              public setNome(value: string) {
+                  this._nome = value;
+              }
+              public getCpf(): string {
+                  return this._cpf;
+              }
+              public setCpf(value: string) {
+                  this._cpf = value;
+              }
+              public toString(): string {
+                  return \`Nome: \${this._nome}, Idade: \${this.idade}, Sexo: \${this.sexo}, CPF: \${this._cpf}\`;
+              }}
+            
+            class Aluno extends Pessoa {
+              constructor(nome: string, idade: number, sexo: string, cpf: string, private matricula: number, private curso: string) {
+                  super(nome, idade, sexo, cpf);
+              }
+              public getMatricula(): number {
+                  return this.matricula;
+              }
+              public setMatricula(value: number) {
+                  this.matricula = value;
+              }
+              public getCurso(): string {
+                  return this.curso;
+              }
+              public setCurso(value: string) {
+                  this.curso = value;
+              }
+              public toString(): string {
+                  return \`\${super.toString()}, Matricula: \${this.matricula}, Curso: \${this.curso}\`;
+              }
+           }
+           const p1 = new Pessoa('João', 20, 'M','116.009.098-61');
+           p1.setNome('Maria');
+           console.log(p1.geNome());
+           console.log(p1.toString());
+           const a1 = new Aluno('João', 20, 'M','116.009.098-61', 123, 'ADS');
+           console.log(a1.toString());
+           
+
+          </code>
+       </pre>
+       <p>Toda vez que precisamos ter acesso a uma coisa da superclasse e estamos na subclasse precisamos usar a palavra reservada super por exemplo.
+       super.getNameUsuario();
+       </p>
+
+       <li>Metodos estaticos e atributos</li>
+       <p>São métodos estaticos aqueles que podem ser acessados sem instanciar a classe, usamos a palavra "static" nomeMetodo(){}
+       Atributos funcionam com a mesma lógica;
+       </p>
+       <pre>
+          <code>
+          static novo():void{
+            console.log('Novo Aluno');
+          }
+          onsole.log(Aluno.novo());
+          </code>
+        </pre>
+
+        <li>Interfaces</li>
+        <p>São utilizadas para criar tipo ou contrato com quem implementa elas:
+        </p>
+          <pre>
+            <code>
+            interface IAluno {
+              nome: string;
+              idade: number;
+              sexo: string;
+              cpf: string;
+              matricula: number;
+              getName(): string;
+           }
+           class Aluno2 implements IAluno {
+              constructor(public nome: string, public idade: number, public sexo: string, public cpf: string, public matricula: number) { }
+           
+              public toString(): string {
+                  return \`Nome: \${this.nome}, Idade: \${this.idade}, Sexo: \${this.sexo}, CPF: \${this.cpf}, Matricula: \${this.matricula}\`;
+              }
+              public getName(): string {
+                  return this.nome;
+              }
+           }
+           
+            </code>
+          </pre>
+    </ul>
 `;
 /**
- * <pre>
+ * <li></li>
+    <p></p>
+      <pre>
         <code>
             
         </code>
-    </pre>
-    <p></p>
-    <p></p>
-    <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-    
-    </ul>
+      </pre>
  */ 
