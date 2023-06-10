@@ -36,18 +36,3 @@ document.getElementById('basico').innerHTML = `
 
 
 `
-/**
- * <pre>
-        <code>
-            
-        </code>
-        </pre>
-    <p></p>
-    <p></p>
-    <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-    
-    </ul>
- */

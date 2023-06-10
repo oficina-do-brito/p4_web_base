@@ -439,5 +439,62 @@ E por último, podemos declarar tipos genéricos através do JSDoc, para isto de
             <p>Um dos recursos mais importantes da orientação a objetos é a possibilidade de sobrescrever ou sobrecarregar métodos e propriedades.</p>
             <p>E no typescript isso não é possivel, se você criar dois metodos com mesmo nome ele irá reclamar, De fato o typescript/javascript ja oferece tanto recurso como
             opradores de rest spread e tudo mais que seria um recurso a mais e pior, ineficiente para linguagem, linguagens interpretadas normalmente não contam com esse recurso. </p>
+            </br>
+
+            <h4>classes abstratas e polimorfismo</h4>
+            <p> Uma classe abstrata é uma classe que nunca se destina a ser instanciada; em vez disso, elas são usadas para passar propriedades para subclasses por meio de herança.
+            <br/>
+            Suponhamos uma situação real, O dono de uma Oficina tem em seu sistema uma classe referente ao trabalhadores, essa classe não precisa ser instanciada,
+            ela só serve pra ditar (representar) o que um trabalhador deve fazer no seu dia dia, comportamentos, logo fazemos essa classe  'pessoa trabalhadora' (ser uma abstrata).
+            Querendo que um trabalhador faça checkin, então pode criar um metodo fazer checkin, e qualquer pessoa na condição de ser uma 'pessoa trabalhadora' dali, deve ser obrigado a fazer checkin, mesmo que o checkin seja diferente dos demais :
+            </b>
+            O metodo checkin pode agir então de acordo com o tipo de trabalhador e sua função, pode ser implementado de diferentes maneiras em cada classe.
+            </p>
+            <pre>
+              <code>
+              abstract class PessoaTrabalhadora {
+
+                abstract  fazerChekin(pessoa:PessoaTrabalhadora):void;
+            
+              }
+              class Funcionario extends  PessoaTrabalhadora {
+              
+                  fazerChekin(pessoa: PessoaTrabalhadora): void {
+                      console.log("implementação qualquer... Funcionario realizou checkin")
+                  }
+              
+              
+              }
+              
+              class Gerente  extends PessoaTrabalhadora{
+              
+                  public fazerChekin(pessoa: PessoaTrabalhadora): void{
+                      console.log("implementação qualquer... gerente realizou checkin")
+                  }
+              
+              }
+              
+              class Dono{
+              
+                  //instancia de checkin
+              
+                  public verChekin(){
+                      // acesso exemplar checkin
+                      console.log("O funcionario chekin da porca e o gerente Mauricio fizeram checkin na oficina");
+                  }
+              }
+              
+              const f1 = new Funcionario();
+              f1.fazerChekin(f1);
+              
+              const g1 = new Gerente();
+              g1.fazerChekin(g1);
+              
+              
+              const d = new Dono();
+              d.verChekin();
+              </code>
+            </pre>
+
     </ul>
 `
