@@ -496,5 +496,46 @@ E por último, podemos declarar tipos genéricos através do JSDoc, para isto de
               </code>
             </pre>
 
+            //exx polimorfismo
+
+            <h4>Tipagem Generica (Generics)</h4>
+            <p>No javascript ja existe um tipo generico e não por acaso ele é evitado com ajuda do typescript, E você pode até se perguntar, oche mas se ja temos um
+            tipo generico por que não utilizamos ele para soluções que exigem tipos genericos?</p>
+            <p>Bem, seu pensamento tem uma logica, mas talves a informação que le falta é que ao usarmos o <em>any</em> em uma função identidade por ex, vamos perder
+            a informação do tipo retorno dela</p>
+            <p>Se passamos um número como parametro esperando um numero ser retornado(função identidade), ficamos inseguros pois a única informação que temos é que qualquer
+            tipo pode ser retornado</p>
+            <pre>
+              <code>
+                /** Função identidade com any -- Forma generica errada -- */
+                function identity(arg: any): any {
+                  return arg;
+                }
+              </code>
+            </pre>
+            <p>Em vez disso, precisamos de uma forma de capturar o tipo do argumento de forma que também possamos usá-lo para denotar o que está sendo retornado.
+             Aqui, usaremos uma variável de tipo , um tipo especial de variável que funciona com tipos em vez de valores.</p>
+             <pre>
+              <code>
+              function identity<Type>(arg: Type): Type {
+                return arg;
+              }
+              console.log(identity(1))
+              
+              /** Por padrão usamos <T> */
+              
+              function somatize<T>(argumentos:T):T{
+                  return argumentos;
+              
+              }
+              
+              // esclarecendo o tipo que identidade vai receber e devolver
+              const umaString = identity<string>("palavarao");
+              const umNumero = identity<number>(1.85);
+              console.log(typeof umaString);
+              console.log(typeof umNumero);
+              </code>
+            </pre>
+            <p>Genericos são muito uteis especialmente em grandes aplicações ou até em pequenas como no uso de biblioteca react, em quase todo codigo que tenha integração</p>
     </ul>
 `
