@@ -436,14 +436,8 @@ E por último, podemos declarar tipos genéricos através do JSDoc, para isto de
               </code>
             </pre>
             <h4>Sobescrita de metodos</h4>
+            <p>Um dos recursos mais importantes da orientação a objetos é a possibilidade de sobrescrever ou sobrecarregar métodos e propriedades.</p>
+            <p>E no typescript isso não é possivel, se você criar dois metodos com mesmo nome ele irá reclamar, De fato o typescript/javascript ja oferece tanto recurso como
+            opradores de rest spread e tudo mais que seria um recurso a mais e pior, ineficiente para linguagem, linguagens interpretadas normalmente não contam com esse recurso. </p>
     </ul>
 `
-/**
- * <li><b></b></li>
-    <p></p>
-      <pre>
-        <code>
-            
-        </code>
-      </pre>
- */
