@@ -1,10 +1,10 @@
 body,ul{
     max-width: 90%;
     margin: 20px;
-    background: #FCCE74;
+    background: #FFEAD1;
     color: #000;
     
 }
-code{
+code,h4{
     color: green;
 }

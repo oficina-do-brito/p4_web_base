@@ -5,40 +5,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/css/reset.css">
+    <link rel="stylesheet" href="../css/css/segundo.css">
+    <link rel="stylesheet" href="../css/css/terceiro.css">
 </head>
 <body>
     <h1>Um formulario é feito usando a atag</h1>
-    <form action="para que url vai ser mandado">
+    <form action="para que url vai ser mandado" method="post">
         <fieldset> <!-- Os campos de formularios são agupados por fildsets e colocando uma legenda-->
             <legend>inputs de login da app</legend>
-            <input type="email" name="email" id="im">
-            <input type="password" name="password" id="ps">
+            <input type="email" name="eml" id="em">
+            <input type="password" name="pass" id="ps">
             <button type="submit">Enviar</button>
         </fieldset>
     </form>
+    <pre>
+        <code>
+            &lt;form action="para que url vai ser mandado" method="post" >
+                &lt;fieldset> &lt;!-- Os campos de formularios são agupados por fildsets e colocando uma legenda-->
+                    &lt;legend>inputs de login da app&lt;/legend>
+                    &lt;input type="email" name="eml" id="em">
+                    &lt;input type="password" name="pass" id="ps">
+                    &lt;button type="submit">Enviar&lt;/button>
+                &lt;/fieldset>
+            &lt;/form>
+
+            Obs importante todo form ter seus campos nomeados para serem referenciados no backend atraves desse nome, 
+             *todo formulario deve ter 1 botão de submição
+             *todo formulario deve ter o metodo de enviar POST ou GET - diferença entre os métodos GET e POST é no envio de parâmetros. 
+             *Isso acontece justamente por que o protocolo HTTP define que cada método tem funções diferentes. O GET é usado geralmente 
+            para “pegar” informações (fazer filtros, querys) e o método POST é usado para “postar” (enviar pra um backend) informações.
+
+        </code>
+    </pre>
+
 
     <h2>Existem muitos tipos de input</h2>
-    button	      Define um botão clicável (usado principalmente com um JavaScript para ativar um script)
-    checkbox	  Define uma caixa de seleção para seleção de várias opções
-    color	      Define um seletor de cores em hexadecimal
-    date	      Define um controle para selecionar data (ano, mês, dia (sem hora))
-    datetime-local	     Define um controle para selecionar data e hora (ano, mês, dia, hora (sem fuso horário)
-    email	     Define um campo para entrar com endereço de e-mail
-    file	     Define um campo para selecionar um arquivo e um botão "Procurar" (para uploads de arquivo)
-    hidden	     Define um campo oculto
-    image	     Define uma imagem como o botão de envio
-    month	     Define um controle para selecionar mês e ano (sem fuso horário)
-    number	     Define um campo para selecionar um número inteiro
-    password	 Define um campo para senha
-    radio	     Define um botão de opção para seleção única
-    range	     Define um controle de intervalo (como um controle deslizante)
-    reset	     Define um botão para reinicar o preenchimento do formulário
-    search	     Define um campo de texto para inserir uma string de pesquisa
-    submit	     Define um botão para enviar os dados do formulário
-    tel	         Define um campo para inserir um número de telefone
-    text	     Input padrão.      Define um campo de texto de linha única
-    time	     Define um controle para inserir um horário (sem fuso horário)
-    url	         Define um campo para inserir uma URL
-    week	     Define um controle para selecionar semana e ano (sem fuso horário)
+    <div style="width: 100%; height: auto;">
+        <input type="button" onclick="gerar()" value="Ver tipos">
+        <ul id="lista">
+
+        </ul>
+    </div>
+    
+    <script>
+        function gerar(){
+        var array = [
+        "button	   ->   Define um botão clicável (usado principalmente com um JavaScript para ativar um script)",
+        "checkbox	->  Define uma caixa de seleção para seleção de várias opções",
+        "color	   ->   Define um seletor de cores em hexadecimal",
+        "date	    ->  Define um controle para selecionar data (ano, mês, dia (sem hora))",
+        "datetime-local	 ->    Define um controle para selecionar data e hora (ano, mês, dia, hora (sem fuso horário)",
+        "email	  ->   Define um campo para entrar com endereço de e-mail",
+        "file	  ->   Define um campo para selecionar um arquivo e um botão 'Procurar' (para uploads de arquivo)",
+        "hidden	  ->   Define um campo oculto",
+        "image	  ->   Define uma imagem como o botão de envio",
+        "month	  ->   Define um controle para selecionar mês e ano (sem fuso horário)",
+        "number	  ->   Define um campo para selecionar um número inteiro",
+        "password	-> Define um campo para senha",
+        "radio	 ->    Define um botão de opção para seleção única",
+        "range	   ->  Define um controle de intervalo (como um controle deslizante)",
+        "reset	  ->   Define um botão para reinicar o preenchimento do formulário",
+        "search	   ->  Define um campo de texto para inserir uma string de pesquisa",
+        "submit	  ->   Define um botão para enviar os dados do formulário",
+        "tel	   ->      Define um campo para inserir um número de telefone",
+        "text	  ->   Input padrão.      Define um campo de texto de linha única",
+        "time	 ->    Define um controle para inserir um horário (sem fuso horário)",
+        "url	   ->      Define um campo para inserir uma URL",
+        "week	  ->   Define um controle para selecionar semana e ano (sem fuso horário)",
+        ]
+        var listElement = document.getElementById("lista");
+        for (var value of array){
+            var itemElement = document.createElement('li');
+            itemElement.appendChild(document.createTextNode(value));
+            listElement.appendChild(itemElement);
+        }
+        listElement.appendChild(listElement);
+ 
+        }
+        
+    </script>
 </body>
 </html>
