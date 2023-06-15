@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="RzJH0hmxB5S2ClgRXe7-" name="Page-1">
-        <mxGraphModel dx="3185" dy="2707" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="3087" dy="2705" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -10,14 +10,26 @@
                 <mxCell id="11" value="" style="edgeStyle=none;html=1;fontFamily=Operator Mono;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DOperator%2BMono;fontColor=#FFFFFF;" parent="1" source="3" target="10" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
+                <mxCell id="32" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="3" target="6">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
                 <mxCell id="3" value="&lt;h1&gt;&lt;font data-font-src=&quot;https://fonts.googleapis.com/css?family=Operator+Mono&quot; face=&quot;Operator Mono&quot;&gt;Html&lt;/font&gt;&lt;/h1&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;font face=&quot;Operator Mono&quot;&gt;A linguagem de marcação utilizada para web.&lt;/font&gt;&lt;/p&gt;" style="text;html=1;strokeColor=default;fillColor=#286a15;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
                     <mxGeometry y="240" width="190" height="100" as="geometry"/>
                 </mxCell>
+                <mxCell id="33" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="6" target="8">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="6" target="36">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
                 <mxCell id="6" value="&lt;h1&gt;&lt;font face=&quot;Operator Mono&quot;&gt;css&lt;/font&gt;&lt;/h1&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;font face=&quot;Operator Mono&quot;&gt;A linguagem de estilo para arquivos html.&lt;/font&gt;&lt;/p&gt;" style="text;html=1;strokeColor=#A50040;fillColor=#d80073;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=1;sketch=1;curveFitting=1;jiggle=2;fontColor=#ffffff;" parent="1" vertex="1">
-                    <mxGeometry y="400" width="190" height="100" as="geometry"/>
+                    <mxGeometry y="540" width="190" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" style="edgeStyle=none;html=1;" edge="1" parent="1" source="8" target="48">
+                    <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="8" value="&lt;h1&gt;&lt;font color=&quot;#ffffff&quot; face=&quot;Operator Mono&quot;&gt;javascript&lt;/font&gt;&lt;/h1&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;font color=&quot;#ffffff&quot; face=&quot;Operator Mono&quot;&gt;A linguagem de programação que da vida e dinamicidade aos arquivos html.&lt;/font&gt;&lt;/p&gt;" style="text;html=1;strokeColor=#B09500;fillColor=#e3c800;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=1;sketch=1;curveFitting=1;jiggle=2;fontColor=#000000;" parent="1" vertex="1">
-                    <mxGeometry y="560" width="190" height="100" as="geometry"/>
+                    <mxGeometry y="1060" width="190" height="100" as="geometry"/>
                 </mxCell>
                 <mxCell id="16" value="" style="edgeStyle=none;html=1;" parent="1" source="10" target="15" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
@@ -49,23 +61,71 @@
                 <mxCell id="29" value="" style="edgeStyle=none;html=1;" parent="1" source="15" target="28" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="31" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="15" target="30">
+                <mxCell id="31" value="" style="edgeStyle=none;html=1;" parent="1" source="15" target="30" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="15" target="34">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="15" value="&lt;h1&gt;&lt;font face=&quot;Operator Mono&quot;&gt;Principais Problemas que podemos resolver no html&amp;nbsp;&lt;/font&gt;&lt;/h1&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;Operator Mono&amp;quot;; background-color: initial;&quot;&gt;Problemas como exibição de imagens, videos, audios ou contrução de canvas e até mesmo svgs.&lt;/span&gt;&lt;/p&gt;" style="text;html=1;strokeColor=default;fillColor=#286a15;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
                     <mxGeometry x="650" y="215" width="370" height="150" as="geometry"/>
                 </mxCell>
                 <mxCell id="19" value="&lt;h1&gt;&lt;font face=&quot;Operator Mono&quot;&gt;Listar Elementos&amp;nbsp;&lt;/font&gt;&lt;/h1&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;Operator Mono&amp;quot;; background-color: initial;&quot;&gt;No html podemos fazer listagem de itens ordenadas e não ordenadas.&lt;/span&gt;&lt;/p&gt;" style="text;html=1;strokeColor=default;fillColor=#286a15;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
-                    <mxGeometry x="920" y="-60" width="370" height="105" as="geometry"/>
+                    <mxGeometry x="700" width="370" height="105" as="geometry"/>
                 </mxCell>
                 <mxCell id="25" value="&lt;h1&gt;&lt;font face=&quot;Operator Mono&quot;&gt;Construção de tabelas&amp;nbsp;&lt;/font&gt;&lt;/h1&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;Operator Mono&amp;quot;; background-color: initial;&quot;&gt;No html podemos fazer tabelas contendo linhas e colunas que nem nas planilhas do excel.&lt;/span&gt;&lt;/p&gt;" style="text;html=1;strokeColor=default;fillColor=#286a15;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
-                    <mxGeometry x="1120" y="60" width="370" height="100" as="geometry"/>
+                    <mxGeometry x="1150" width="370" height="100" as="geometry"/>
                 </mxCell>
                 <mxCell id="28" value="&lt;h1&gt;&lt;font face=&quot;Operator Mono&quot;&gt;Criando Formularios&amp;nbsp;&lt;/font&gt;&lt;/h1&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;Operator Mono&amp;quot;; background-color: initial;&quot;&gt;A coisa mais utilizada em arquivos html são os formularios eles tem uma tag propria forms no qual vc pode usar muitos imputs dentro . 1 formulario consiste em muitos input e 1 button typo submit.&lt;/span&gt;&lt;/p&gt;" style="text;html=1;strokeColor=default;fillColor=#286a15;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
-                    <mxGeometry x="1190" y="180" width="370" height="115" as="geometry"/>
+                    <mxGeometry x="1160" y="150" width="370" height="115" as="geometry"/>
                 </mxCell>
-                <mxCell id="30" value="&lt;h1&gt;&lt;font face=&quot;Operator Mono&quot;&gt;Principais Problemas que podemos resolver no html&amp;nbsp;&lt;/font&gt;&lt;/h1&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;Operator Mono&amp;quot;; background-color: initial;&quot;&gt;Problemas como exibição de imagens, videos, audios ou contrução de canvas e até mesmo svgs.&lt;/span&gt;&lt;/p&gt;" style="text;html=1;strokeColor=default;fillColor=#286a15;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
-                    <mxGeometry x="1190" y="310" width="370" height="150" as="geometry"/>
+                <mxCell id="30" value="&lt;h1&gt;&lt;font face=&quot;Operator Mono&quot;&gt;Exibição de midias&amp;nbsp;&lt;/font&gt;&lt;/h1&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;Operator Mono&amp;quot;; background-color: initial;&quot;&gt;Problemas como exibição de imagens, videos, audios ou contrução de canvas e até mesmo svgs.&lt;/span&gt;&lt;/p&gt;" style="text;html=1;strokeColor=default;fillColor=#286a15;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="1160" y="300" width="370" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="&lt;h1&gt;&lt;font face=&quot;Operator Mono&quot;&gt;Legibilidade, tecnicas de SEO&amp;nbsp;&lt;/font&gt;&lt;/h1&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;Operator Mono&amp;quot;; background-color: initial;&quot;&gt;Um html bem estruturado, contendo muitas referencias para outros sites que falam do mesmo assunto.&lt;/span&gt;&lt;/p&gt;" style="text;html=1;strokeColor=default;fillColor=#286a15;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+                    <mxGeometry x="1160" y="490" width="370" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="36" target="38">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="&lt;h1&gt;&lt;font face=&quot;Operator Mono&quot;&gt;estilização&lt;/font&gt;&lt;/h1&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;font face=&quot;Operator Mono&quot;&gt;Um estilo bem padronizado seguindo padrão qbackcase torna facil a vida do programador ao realizar manutenção.&lt;/font&gt;&lt;/p&gt;" style="text;html=1;strokeColor=#A50040;fillColor=#d80073;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=1;sketch=1;curveFitting=1;jiggle=2;fontColor=#ffffff;" vertex="1" parent="1">
+                    <mxGeometry x="270" y="540" width="290" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="38" target="40">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="38" target="42">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" style="edgeStyle=none;html=1;" edge="1" parent="1" source="38" target="44">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="38" target="46">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="&lt;h1&gt;&lt;font face=&quot;Operator Mono&quot;&gt;Principais Problemas que podemos resolver no css&amp;nbsp;&lt;/font&gt;&lt;/h1&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;Operator Mono&amp;quot;; background-color: initial;&quot;&gt;Problemas como exibição de estilo.&lt;/span&gt;&lt;/p&gt;" style="text;html=1;strokeColor=#A50040;fillColor=#d80073;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=1;sketch=1;curveFitting=1;jiggle=2;fontColor=#ffffff;" vertex="1" parent="1">
+                    <mxGeometry x="650" y="530" width="370" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="&lt;h1&gt;&lt;font face=&quot;Operator Mono&quot;&gt;visualização não adaptada&amp;nbsp;&lt;/font&gt;&lt;/h1&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;Operator Mono&amp;quot;; background-color: initial;&quot;&gt;Problemas de responsividade em paginas que são muito acessadas e de diferentes tamanhos e dispositivos.&lt;/span&gt;&lt;/p&gt;" style="text;html=1;strokeColor=#A50040;fillColor=#d80073;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=1;sketch=1;curveFitting=1;jiggle=2;fontColor=#ffffff;" vertex="1" parent="1">
+                    <mxGeometry x="1160" y="670" width="370" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="&lt;h1&gt;&lt;font face=&quot;Operator Mono&quot;&gt;Classes mal reutilizadas css&amp;nbsp;&lt;/font&gt;&lt;/h1&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;Operator Mono&amp;quot;; background-color: initial;&quot;&gt;Problemas como exibição de estilo.&lt;/span&gt;&lt;/p&gt;" style="text;html=1;strokeColor=#A50040;fillColor=#d80073;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=1;sketch=1;curveFitting=1;jiggle=2;fontColor=#ffffff;" vertex="1" parent="1">
+                    <mxGeometry x="1160" y="870" width="370" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" value="&lt;h1&gt;&lt;font face=&quot;Operator Mono&quot;&gt;Outras drogas&amp;nbsp;&lt;/font&gt;&lt;/h1&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;Operator Mono&amp;quot;; background-color: initial;&quot;&gt;Renderização de forma distorcida.&lt;/span&gt;&lt;/p&gt;" style="text;html=1;strokeColor=#A50040;fillColor=#d80073;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=1;sketch=1;curveFitting=1;jiggle=2;fontColor=#ffffff;" vertex="1" parent="1">
+                    <mxGeometry x="770" y="870" width="370" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" value="&lt;h1&gt;&lt;font face=&quot;Operator Mono&quot;&gt;Aplicação de efeitos css&amp;nbsp;&lt;/font&gt;&lt;/h1&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;Operator Mono&amp;quot;; background-color: initial;&quot;&gt;Efeitos na exibição de estilo.&lt;/span&gt;&lt;/p&gt;" style="text;html=1;strokeColor=#A50040;fillColor=#d80073;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=1;sketch=1;curveFitting=1;jiggle=2;fontColor=#ffffff;" vertex="1" parent="1">
+                    <mxGeometry x="420" y="710" width="370" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="51" value="" style="edgeStyle=none;html=1;fontColor=#FFFFFF;" edge="1" parent="1" source="48" target="50">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="&lt;h1&gt;&lt;font color=&quot;#ffffff&quot; face=&quot;Operator Mono&quot;&gt;Resolve tudo que alguem pode imaginar e criar&amp;nbsp;&lt;/font&gt;&lt;/h1&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;Operator Mono&amp;quot;; background-color: initial;&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;Problemas de todo tipo, na web, e em qualquer lugar que possibilite a intação do nodejs.&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;" style="text;html=1;strokeColor=#B09500;fillColor=#e3c800;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=1;sketch=1;curveFitting=1;jiggle=2;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="320" y="1040" width="370" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" value="&lt;h1&gt;&lt;font color=&quot;#ffffff&quot; face=&quot;Operator Mono&quot;&gt;Criação de SPA,&lt;/font&gt;&lt;/h1&gt;&lt;div&gt;&lt;h1&gt;&lt;font face=&quot;Operator Mono&quot; color=&quot;#ffffff&quot;&gt;Sustenta as raparigas,&lt;/font&gt;&lt;/h1&gt;&lt;/div&gt;&lt;div&gt;&lt;h1&gt;&lt;font face=&quot;Operator Mono&quot; color=&quot;#ffffff&quot;&gt;Aplicações desktops,&lt;/font&gt;&lt;/h1&gt;&lt;/div&gt;&lt;div&gt;&lt;h1&gt;&lt;font face=&quot;Operator Mono&quot; color=&quot;#ffffff&quot;&gt;Aplicações Mobile, etc&lt;/font&gt;&lt;/h1&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Operator Mono&quot; color=&quot;#ffffff&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;strokeColor=#B09500;fillColor=#e3c800;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=1;sketch=1;curveFitting=1;jiggle=2;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="720" y="1200" width="370" height="240" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
