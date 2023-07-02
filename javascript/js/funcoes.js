@@ -4,7 +4,7 @@ document.getElementById('funcoes').innerHTML = `
 <ul>
         <li><b>função normal </b>: que inicia com a nomenclatura function</li>
         <pre>
-            <code>
+            <code class="code-style">
             function somaTwoNumber(num1, num2) {
                 return num1 + num2;
                }               
@@ -12,7 +12,7 @@ document.getElementById('funcoes').innerHTML = `
         </pre>
         <li><b>função anonima </b>: que não tem nome, normal mente usamos dentro de outras funçoes como callbacks e por ai endiante</li>
         <pre>
-            <code>
+            <code class="code-style">
             const soma = function (num1, num2) {
                 return num1 + num2;
             };                          
@@ -27,7 +27,7 @@ document.getElementById('funcoes').innerHTML = `
 
         <p>Para exemplificar vermos a diferença do this dentro da errow vamos ver num objeto como ele se ccomporta </p>
         <pre>
-            <code>
+            <code class="code-style">
             const jarbas = {
                 nome:"Qualquernome",
                 resultado: 0,
@@ -68,7 +68,7 @@ document.getElementById('funcoes').innerHTML = `
         <h5>Mas e se a gente quizer concertar tem como fazer vincular o this do objeto ao this chamado dentro da arrow function?</h5>
         <p>Sim, isso se chama binding, é uma gambiarra pq a gente deve saber desse efeito de utilizar arrow function mais vamos la, na definição da classe de 1 objeto fazer o bind do this</p>
         <pre>
-            <code>
+            <code class="code-style">
             this.r = this.r.bind(this),          
             </code>
         </pre>

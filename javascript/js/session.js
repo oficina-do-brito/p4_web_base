@@ -6,7 +6,7 @@ document.getElementById('session').innerHTML = `
         <li>A diferença é que os dados expiram quando a aba é fechada</li>
         <p> Ao usar uma tag de script ou via escrevendo arquivo.js com destino a web o proprio vscode ao digitarmos sessionStorage ja nos tras sugestoẽs que nem o localStorage e a forma de trabalhar com ele é muito similar inclusive:</p>
         <pre>
-            <code>
+            <code class="code-style">
             //inserir dados (chave/valor)
             sessionStorage.setItem("mode","dark_mode_1");
 

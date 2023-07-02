@@ -12,7 +12,7 @@ document.getElementById('arrays').innerHTML = `
         <li><b>map()</b>: que é um metodo usado para mapear um array, percorrer elemento por elemento. Ele recebe uma função de callback e nessa função você basicamente decide o que vai fazer com cada elemento.
         É muito util e deixa seu codigo menor e mais limpo</li>
         <pre>
-            <code>
+            <code class="code-style">
                 const alunos = ["nome", "maria"];
                 alunos.map( (i) => console.log(i) );
             </code>

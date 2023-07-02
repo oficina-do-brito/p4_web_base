@@ -8,7 +8,7 @@ document.getElementById('local').innerHTML = `
         <li>Por isso muitos problemasque envolvem questão de segurança são resolvidos passando para os cookies</li>
         <p> Ao usar uma tag de script ou via escrevendo arquivo.js com destino a web o proprio vscode ao digitarmos localStorage ele nos fornece os metodos para uso, então para salvar dados usamos d metodo setItem e do conceito chave e valor:</p>
         <pre>
-            <code>
+            <code class="code-style">
             //inserir dados (chave/valor)
             localStorage.setItem("cor_da_screen","preta");
 

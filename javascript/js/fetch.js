@@ -16,7 +16,7 @@ document.getElementById('fetch').innerHTML = `
 <ul>
         <li><b>1 fetch retorna por padrão 1 promise que deve ser usado o .then() para resolver a promessa</b>:</li>
         <pre>
-            <code>
+            <code class="code-style">
             //exemplo de requisição com fetch api
 
             fetch("www.google.com")
@@ -27,7 +27,7 @@ document.getElementById('fetch').innerHTML = `
 
         <li><b>fetch pode dar uma dor de cabeça a mais na resolução de promise, e é justamente para resolver isso que inventaram o Axios um simplificador, porém é biblioteca externa</b>:</li>
         <pre>
-            <code>
+            <code class="code-style">
             $ npm install axios
             const axios = require("axios");
 

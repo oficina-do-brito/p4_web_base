@@ -5,7 +5,7 @@ document.getElementById("numeros").innerHTML = `
 <p>Ao trabalharmos com números no javascript existem métodos que nos facilitam também a vida do programador por exemplo</p>
 <p>o objeto Number possui muitos metodos de conversão, verificação e etc... esses metodos são bem uteis e podemos saber mais sobre eles em: <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank">link</a></p>
 <pre>
-        <code>
+        <code class="code-style">
         console.clear();
         let numero =10
         let numeral = new Number(20)
@@ -16,7 +16,7 @@ document.getElementById("numeros").innerHTML = `
 <ul>
     <li><b>isNaN()</b>: o NAN (not a number) é muito usado para saber quando ocorre um erro inesperado, tipo somar 1 numero com 1 string, o resultado é NaN, podemos verificar se uma conta deu errado por ex:</li>
     <pre>
-        <code>
+        <code class="code-style">
         let a = "sadsad";
         let b = 10;
         const c = a * b;
@@ -25,7 +25,7 @@ document.getElementById("numeros").innerHTML = `
     </pre>
     <li><b>isInterger()</b>:verificar se o numero é inteiro</li>
     <pre>
-        <code>
+        <code class="code-style">
         console.log(Number.isInteger(b));      
         </code>
     </pre>

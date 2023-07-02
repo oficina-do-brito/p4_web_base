@@ -1,60 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aprendendo JS</title>
     <!-- jquery -->
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../css/css/reset.css">
-    <link rel="stylesheet" href="../css/css/terceiro.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/css/caderno.css">
+    <link rel="stylesheet" href="../css/css/segundo.css">
 </head>
+
 <body>
-    <h1>Javascript</h1>
-    <p>A linguagem de programação mais utilizada no mundo.</p>
-    <p><b>Atenção:</b> Nesse documento será demonstrado só a parte dos meus conhecimentos e curiosidades sobre a linguagem, e vale lembrar que eu sou um escritor de scripts
-    com quase nenhuma experiencia, sou jr ainda estou aprendendo a ligar o pc então considere isso e se achar alguma informação duvidosa pesquise sobre.
-    </p>
-    <br/><hr><br/>
-    <section>
-        <h2>Histórico</h2>
-        <p>
-            Uma coisa que quem estuda tecnologia está cansado de saber é que tão importante quanto cair de cara na prática e sair codificando,
-             é estudar a história de uma tecnologia e os conceitos.
-
+    <main>
+        <h1>Javascript</h1>
+        <p>A linguagem de programação mais utilizada no mundo.</p>
+        <p><b>Atenção:</b> Nesse documento será demonstrado só a parte dos meus conhecimentos e curiosidades sobre a
+            linguagem, e vale lembrar que eu sou um escritor de scripts
+            com quase nenhuma experiencia, sou jr ainda estou aprendendo a ligar o pc então considere isso e se achar
+            alguma informação duvidosa pesquise sobre.
         </p>
-        <p>Vamos então explanar conhecimentos sobre essa linguagem <em>cedosa</em> por meio de topicos:</p>
-        <ul>
-            <li>Essa linguagem foi especificamente criada para navegadores web, especificamente o navegador Netscape da empresa Netscape (foda né mamrketeiro).
-            Bem de forma resumida por volta de 1996, o quê os programadores tinham na web é que eles utilizavam a web para compartinharem informaçoes de forma mais estaticas no html, 
-            até que alguem achou aquilo sem graça e começou a pensar em criar uma linguagem que pudesse interargir com elementos do html e moficar em tempo real ou no caso fazer
-            a validação de algo quase que em tempo real, não sei de quem foi a ideia Foda-se mas o  Brendan Eich que foi o cara que criou a linguagem e com foco de resolver esse
-            problema validar formularios.
-            </li><br />
-            <li>Essa linguagem então nasceu com objetivo claro e é uma linguagem de programação interpretada: Ou seja seu código fonte é executado por um programa de computador denominado <b>interpretador</b> e o que esse danado de interpretador traria de beneficio?</li>
-            <ol>
-                <li>Uma vez interpretada pelos navegadores, os mesmos tornaria possivel manipular estruturas dos html e tals</li>
-                <li>Outros interpretadores como <em>Node.js</em> que no tempo nem sonhava em ser criado, mais tarde seria criado, tornando  a linguagem popular e com maior capacidade
-                de resolução de problemas </li><br />
-            </ol>
-            <li>O js  é uma linguagem de alto nível: tem entendimento mais próximo da realidade, essa característica geralmente define se ela é Orientada a Objetos (OO) 
-            ou não, e ela é multi paradigma: "lembrando que 1 paradigma é uma forma de classificar determinada linguagem com base no seu funcionamento", logo se você pensou,
-            então se ela é multi paradigma, ela consegue funcionar de 2 formas. De fato é isso! O js utiliza tanto do paradigma OO quanto funcional.</li><br />
-            <li>E aí em que isso afeta? Afeta que podemos usar o melhor dos 2 mundos o "OO" que por padrão as variáveis são mutáveis e o 
-            paradigma funcional onde geralmente as linguagens que tem essa característica de serem funcional tem variáveis imutáveis . 
-            Podemos então para exemplificar construir algo no paradigma funcional e no OO:
-            <br/>
-            *A OO determina que o código deve ser modelado de forma a se aproximar ao mundo real, e que o mesmo em execução no
-            computador tenha tal modelagem representada por uma estrutura de objetos, características e ações. 
-            Tais objetos podem interagir uns com os outros modificando o estado do programa até que resultem nas saídas esperadas.
+        <br />
+        <hr><br />
+        <section>
+            <h2>Histórico</h2>
+            <p>
+                Uma coisa que quem estuda tecnologia está cansado de saber é que tão importante quanto cair de cara na
+                prática e sair codificando,
+                é estudar a história de uma tecnologia e os conceitos.
 
-            Para viabilizar essa estrutura, OO propõe o uso de Classes, Atributos e Métodos, 
-            unido a características como Abstração, Encapsulamento, Herança e Polimorfismo.
-             Os objetos são instâncias das classes e possuem um estado durante a execução do software 
-             podendo as mesmas serem modificadas, persistidas e recarregadas de acordo com a lógica implementada.
-            <pre>
-                <code>
+            </p>
+            <p>Vamos então explanar conhecimentos sobre essa linguagem <em>cedosa</em> por meio de topicos:</p>
+            <ul>
+                <li>Essa linguagem foi especificamente criada para navegadores web, especificamente o navegador Netscape
+                    da empresa Netscape (foda né mamrketeiro).
+                    Bem de forma resumida por volta de 1996, o quê os programadores tinham na web é que eles utilizavam
+                    a web para compartinharem informaçoes de forma mais estaticas no html,
+                    até que alguem achou aquilo sem graça e começou a pensar em criar uma linguagem que pudesse
+                    interargir com elementos do html e moficar em tempo real ou no caso fazer
+                    a validação de algo quase que em tempo real, não sei de quem foi a ideia Foda-se mas o Brendan Eich
+                    que foi o cara que criou a linguagem e com foco de resolver esse
+                    problema validar formularios.
+                </li><br />
+                <li>Essa linguagem então nasceu com objetivo claro e é uma linguagem de programação interpretada: Ou
+                    seja seu código fonte é executado por um programa de computador denominado <b>interpretador</b> e o
+                    que esse danado de interpretador traria de beneficio?</li>
+                <ol>
+                    <li>Uma vez interpretada pelos navegadores, os mesmos tornaria possivel manipular estruturas dos
+                        html e tals</li>
+                    <li>Outros interpretadores como <em>Node.js</em> que no tempo nem sonhava em ser criado, mais tarde
+                        seria criado, tornando a linguagem popular e com maior capacidade
+                        de resolução de problemas </li><br />
+                </ol>
+                <li>O js é uma linguagem de alto nível: tem entendimento mais próximo da realidade, essa característica
+                    geralmente define se ela é Orientada a Objetos (OO)
+                    ou não, e ela é multi paradigma: "lembrando que 1 paradigma é uma forma de classificar determinada
+                    linguagem com base no seu funcionamento", logo se você pensou,
+                    então se ela é multi paradigma, ela consegue funcionar de 2 formas. De fato é isso! O js utiliza
+                    tanto do paradigma OO quanto funcional.</li><br />
+                <li>E aí em que isso afeta? Afeta que podemos usar o melhor dos 2 mundos o "OO" que por padrão as
+                    variáveis são mutáveis e o
+                    paradigma funcional onde geralmente as linguagens que tem essa característica de serem funcional tem
+                    variáveis imutáveis .
+                    Podemos então para exemplificar construir algo no paradigma funcional e no OO:
+                    <br />
+                    *A OO determina que o código deve ser modelado de forma a se aproximar ao mundo real, e que o mesmo
+                    em execução no
+                    computador tenha tal modelagem representada por uma estrutura de objetos, características e ações.
+                    Tais objetos podem interagir uns com os outros modificando o estado do programa até que resultem nas
+                    saídas esperadas.
+
+                    Para viabilizar essa estrutura, OO propõe o uso de Classes, Atributos e Métodos,
+                    unido a características como Abstração, Encapsulamento, Herança e Polimorfismo.
+                    Os objetos são instâncias das classes e possuem um estado durante a execução do software
+                    podendo as mesmas serem modificadas, persistidas e recarregadas de acordo com a lógica implementada.
+                    <pre>
+                <code class="code-style">
                     Object.defineProperty(this, "funcao", {
                         enumerable: true,
                         value: funcao,
@@ -63,118 +86,149 @@
                      
                 </code>
             </pre>
-            <button>Copie</button>
-            <textarea class="hide"></textarea>
-            <br/>
+                    <button>Copie</button>
+                    <textarea class="hide"></textarea>
+                    <br />
 
-            * O paradigma funcional é derivado do declarativo, onde o objetivo é declarar ao computador o resultado esperado, e não o passo a passo para construção deste resultado.
-            Essa forma de compor o código traz duas características que a tornam bastante diferente das demais, que são a imutabilidade e por consequência a não mudança de estado
-             do software.
-             <pre>
-                <code>
+                    * O paradigma funcional é derivado do declarativo, onde o objetivo é declarar ao computador o
+                    resultado esperado, e não o passo a passo para construção deste resultado.
+                    Essa forma de compor o código traz duas características que a tornam bastante diferente das demais,
+                    que são a imutabilidade e por consequência a não mudança de estado
+                    do software.
+                    <pre>
+                <code class="code-style">
                     const funcao = (nota1,nota2) => nota1+nota2
                 </code>
             </pre>
-            </li>
-            <li> E ai o que danado essas caracteristicas nos tras de bom ? Bem essa caracteristica tras coisas muitos boas para a linguagem por que na verdade o fato do javascript ser
-                uma linguagem fracamente tipada acabou que ocasionava muitos erros e dores de cabeça aos programadores que passavam a maior parte do tempo debugando codigo em vez de programando,
-                logo alguem percebeu esse problema e novamente caimos na mesma tecla de que programadores resolvem problemas, e então surgiu o <em>typescript</em> uma extenção do js ou superset do javascript que 
-                acrescenta typagem estatica a linguagem e alem disso novos recursos, e isso tudo graça a caracteristica do paradigma funcional que garante a imutabilidade do tipo de dados, esse tipo de dados é 
-                nada mais que uma interface provida com essa extenção do js, o typescript. Ja considerada como linguagem o typescript é transpilado para produção e se torna javascript 
-                que é interpretado pelo node.js e nos permite resolver muitos problemas com essa linguagem como:
+                </li>
+                <li> E ai o que danado essas caracteristicas nos tras de bom ? Bem essa caracteristica tras coisas
+                    muitos boas para a linguagem por que na verdade o fato do javascript ser
+                    uma linguagem fracamente tipada acabou que ocasionava muitos erros e dores de cabeça aos
+                    programadores que passavam a maior parte do tempo debugando codigo em vez de programando,
+                    logo alguem percebeu esse problema e novamente caimos na mesma tecla de que programadores resolvem
+                    problemas, e então surgiu o <em>typescript</em> uma extenção do js ou superset do javascript que
+                    acrescenta typagem estatica a linguagem e alem disso novos recursos, e isso tudo graça a
+                    caracteristica do paradigma funcional que garante a imutabilidade do tipo de dados, esse tipo de
+                    dados é
+                    nada mais que uma interface provida com essa extenção do js, o typescript. Ja considerada como
+                    linguagem o typescript é transpilado para produção e se torna javascript
+                    que é interpretado pelo node.js e nos permite resolver muitos problemas com essa linguagem como:
 
-            </li>
-        </ul>
-    <br/><hr><br/>
-    <section>
-        <h2>Problemas que podem ser resolvidos a partir do js</h2>
-        <ul>
-            <h3>Ferramentas e Problemas focados na web</h3>
-            <li>Dinamicidade e facilidade de trabalho com elementos DOM ->  jQuery: é uma biblioteca livre que contém funções da linguagem de programação JavaScript que interage com páginas em HTML, desenvolvida para simplificar os scripts executados/interpretados no navegador de internet do usuário</li>
-            <li>Controle de exibição de arquivos de audio video</li>
-            <li>Facilidade no uso de de busca de dados na rede com Fetch API, Axios</li>
-            <li>Frameworks que fazem SPA como Angular,Vue </li>
-            <li>criação de SPA com biblioteca react</li>
-            <li>renderização do lado do servidor e geração de sites estáticos para aplicativos da web com framework NEXT.js</li>
-            <li>geração de pdf com <a href="https://react-pdf.org/" target="_blank">react-pdf </a></li>
-            <li> js no css, deixando mais dinamico e poderoso com <a href="https://styled-components.com/" target="_blank">styled-components</a></li>
-
-            <br>
-            <h3>Ferramentas e Problemas locais</h3>
-            <li>servidores com node + apche, Nginx</li>
-            <li>Manipulação de dados em tabela excel com xlsx transferir para um db ou vice versa</li>
-            <li>React Native para mobile</li>
-            <li>Criação de applicações desktops com vue e electron</li>
-            <li>Three.js é uma biblioteca JavaScript/API cross-browser usada para criar e mostrar gráficos 3D animados em um navegador web.<a href="https://threejs.org/">documentação</a></li>
-        </ul>
-
-    </section>
-    <br/><hr><br/>
-    <section>
-        <h2>javascript</h2>
-        <iframe allow="autoplay:true;" src="https://drive.google.com/file/d/1cVgEGOQG-dIeX5P1SUrw4IdMUCR1drQQ/preview" width="300" height="180" style="border:1px solid black;"></iframe>
-        <ul>
-            <h3>Basico sobre esse mundo</h3>
-            <p>Como vimos anteriormente  basicamente essa linguagem na utilidade  nos permite fazer quase qualquer coisa que sejam feitas em outras linguagens, devido a sua expansão de ambiente 
-            de reprodução da mesma consolidada pelo nodejs. Então simbora para o basico sobre mundo:
-            </p>
-            <ul>
-                <li> Para construção de apps com envolvendo essa linguagem o motor de giro utilizado é o nodejs</li>
-                <li> O gerenciador de pacotes mais comum utilizado o "npm" embora tenha yarn e outros que surgem a cada dia </li>
-                <li> Dependencias e bibliotecas são armazenadas em pasta padrão "node_modules" </li>
-                <li> Como em outras linguagens como python que armazena versão e info das bibliotecas em arquivos como requirements.txt, no javascript as versões e vibliotecas utilizadas em um
-                projeto ficam descritas no package.json
                 </li>
             </ul>
-            <br/>
-            <h3>Basico da sintax</h3>
-            <br/>
-            <h4>Tipo de dados</h4>
+            <br />
+            <hr><br />
+            <section>
+                <h2>Problemas que podem ser resolvidos a partir do js</h2>
+                <ul>
+                    <h3>Ferramentas e Problemas focados na web</h3>
+                    <li>Dinamicidade e facilidade de trabalho com elementos DOM -> jQuery: é uma biblioteca livre que
+                        contém funções da linguagem de programação JavaScript que interage com páginas em HTML,
+                        desenvolvida para simplificar os scripts executados/interpretados no navegador de internet do
+                        usuário</li>
+                    <li>Controle de exibição de arquivos de audio video</li>
+                    <li>Facilidade no uso de de busca de dados na rede com Fetch API, Axios</li>
+                    <li>Frameworks que fazem SPA como Angular,Vue </li>
+                    <li>criação de SPA com biblioteca react</li>
+                    <li>renderização do lado do servidor e geração de sites estáticos para aplicativos da web com
+                        framework NEXT.js</li>
+                    <li>geração de pdf com <a href="https://react-pdf.org/" target="_blank">react-pdf </a></li>
+                    <li> js no css, deixando mais dinamico e poderoso com <a href="https://styled-components.com/"
+                            target="_blank">styled-components</a></li>
 
-            <h5>primitivos</h5>
+                    <br>
+                    <h3>Ferramentas e Problemas locais</h3>
+                    <li>servidores com node + apche, Nginx</li>
+                    <li>Manipulação de dados em tabela excel com xlsx transferir para um db ou vice versa</li>
+                    <li>React Native para mobile</li>
+                    <li>Criação de applicações desktops com vue e electron</li>
+                    <li>Three.js é uma biblioteca JavaScript/API cross-browser usada para criar e mostrar gráficos 3D
+                        animados em um navegador web.<a href="https://threejs.org/">documentação</a></li>
+                </ul>
 
-            <li>String    -> conjunto de caracteres</li>
-            <li>Number    -> valores numericos com e sem . flutuante</li>
-            <li>Boolean   -> valores booleanos</li>
-            <li>undefined ->  valor de uma variável não está definido</li>
-            <li>Null      -> um valor não definido, mas de forma induzida, ou seja, o programador colocou null em alguma propriedade de objeto, por exemplo</li>
-            <li>Symbol    -> valor simbolico,usados para adicionar chaves de propriedade exclusivas a um objeto que não colide com as chaves que qualquer outro código pode adicionar ao objeto e 
-            que estão ocultas de quaisquer mecanismos que outro código normalmente usará para acessar o objeto</li>
+            </section>
+            <br />
+            <hr><br />
+            <section>
+                <h2>javascript</h2>
+                <iframe allow="autoplay:true;"
+                    src="https://drive.google.com/file/d/1cVgEGOQG-dIeX5P1SUrw4IdMUCR1drQQ/preview" width="300"
+                    height="180" style="border:1px solid black;"></iframe>
+                <ul>
+                    <h3>Basico sobre esse mundo</h3>
+                    <p>Como vimos anteriormente basicamente essa linguagem na utilidade nos permite fazer quase qualquer
+                        coisa que sejam feitas em outras linguagens, devido a sua expansão de ambiente
+                        de reprodução da mesma consolidada pelo nodejs. Então simbora para o basico sobre mundo:
+                    </p>
+                    <ul>
+                        <li> Para construção de apps com envolvendo essa linguagem o motor de giro utilizado é o nodejs
+                        </li>
+                        <li> O gerenciador de pacotes mais comum utilizado o "npm" embora tenha yarn e outros que surgem
+                            a cada dia </li>
+                        <li> Dependencias e bibliotecas são armazenadas em pasta padrão "node_modules" </li>
+                        <li> Como em outras linguagens como python que armazena versão e info das bibliotecas em
+                            arquivos como requirements.txt, no javascript as versões e vibliotecas utilizadas em um
+                            projeto ficam descritas no package.json
+                        </li>
+                    </ul>
+                    <br />
+                    <h3>Basico da sintax</h3>
+                    <br />
+                    <h4>Tipo de dados</h4>
 
-            <h5>Mais tipo que podem ser assumidos</h5>
+                    <h5>primitivos</h5>
 
-            <li>object</li>
-            <li>escape do es6 -> any</li>
+                    <li>String -> conjunto de caracteres</li>
+                    <li>Number -> valores numericos com e sem . flutuante</li>
+                    <li>Boolean -> valores booleanos</li>
+                    <li>undefined -> valor de uma variável não está definido</li>
+                    <li>Null -> um valor não definido, mas de forma induzida, ou seja, o programador colocou null em
+                        alguma propriedade de objeto, por exemplo</li>
+                    <li>Symbol -> valor simbolico,usados para adicionar chaves de propriedade exclusivas a um objeto que
+                        não colide com as chaves que qualquer outro código pode adicionar ao objeto e
+                        que estão ocultas de quaisquer mecanismos que outro código normalmente usará para acessar o
+                        objeto</li>
 
-            <br/>
-            <h4>Comentarios</h4>
-            <p>Talvez você nem considere importante comentar codigo, porem quando trabalhado com javascript puro isso acaba facilitando nossa vida ja que toda variavel é considerada <em>any</em>.
-                É importante lembrar que embora o typescript quase que elimine a necessidade de comentarios, mais ainda sim dependendo da logica do 
-                programa é importante usar esse recurso para descomplicar um pouco o entendimento dessa logica.
-            </p>
-            <p>comentarios de uma unica linha no javascript é feito basicamente usando barra dupla // na linha de codigo, 
-                quando no vscode os atalhos variam entre Crtl+/ e Crtl+; dependendo do SO do usuario.
-            </p>
-            <pre>
-                <code>
+                    <h5>Mais tipo que podem ser assumidos</h5>
+
+                    <li>object</li>
+                    <li>escape do es6 -> any</li>
+
+                    <br />
+                    <h4>Comentarios</h4>
+                    <p>Talvez você nem considere importante comentar codigo, porem quando trabalhado com javascript puro
+                        isso acaba facilitando nossa vida ja que toda variavel é considerada <em>any</em>.
+                        É importante lembrar que embora o typescript quase que elimine a necessidade de comentarios,
+                        mais ainda sim dependendo da logica do
+                        programa é importante usar esse recurso para descomplicar um pouco o entendimento dessa logica.
+                    </p>
+                    <p>comentarios de uma unica linha no javascript é feito basicamente usando barra dupla // na linha
+                        de codigo,
+                        quando no vscode os atalhos variam entre Crtl+/ e Crtl+; dependendo do SO do usuario.
+                    </p>
+                    <pre>
+                <code class="code-style">
                     // const nome = "maria";
                 </code>
             </pre>
-            <p>ja comentarios de multiplas linhas, que são mais utilizados inclusive para documentar devem ser feitos apartir da abertura /** e fechando o comeantario com */</p>
-            <p>Normalmente no vscode é oferecido ao usuario um padrão de tags de marcação que funciona dentro do comentario, tornando melhor tanto a descrição do comentario
-            quanto a visualização.
-            <br>
-            /**
-            * @description Do que se trata a função, qual a logica<br>
-            * @param {number} nota1 - parametro 1<br>
-            * @param {number} nota2  - parametro 2<br>
-            * @returns {number}      - retorno <br>
-            * Ainda tem referencias de chamada de outras funçoes, caso necessario<br>
-            */<br>
-            O detalhe aqui é que comentarios de documentação devem ser colocado logo acima da função na qual se trata, ou seja acima da definição daquela função ou metodo etc...
-            </p>
-            <pre>
-                <code>
+                    <p>ja comentarios de multiplas linhas, que são mais utilizados inclusive para documentar devem ser
+                        feitos apartir da abertura /** e fechando o comeantario com */</p>
+                    <p>Normalmente no vscode é oferecido ao usuario um padrão de tags de marcação que funciona dentro do
+                        comentario, tornando melhor tanto a descrição do comentario
+                        quanto a visualização.
+                        <br>
+                        /**
+                        * @description Do que se trata a função, qual a logica<br>
+                        * @param {number} nota1 - parametro 1<br>
+                        * @param {number} nota2 - parametro 2<br>
+                        * @returns {number} - retorno <br>
+                        * Ainda tem referencias de chamada de outras funçoes, caso necessario<br>
+                        */<br>
+                        O detalhe aqui é que comentarios de documentação devem ser colocado logo acima da função na qual
+                        se trata, ou seja acima da definição daquela função ou metodo etc...
+                    </p>
+                    <pre>
+                <code class="code-style">
                     /**
                     * @description Uma função que reccebe como parametro  numeros e realiza sua soma,
                     * @param {number} nota1
@@ -186,101 +240,108 @@
                     console.log(funcao(4,7))
                 </code>
             </pre>
-            <h4>Variaveis no js</h4>
-            <p>variaveis nso js podem ser de 3 tipos:
-                <ul>
-                    <li><b>var</b>: são variaveis globais podem ser redeclaradas e seus valores podem sofrer mutações no decorrer do programa</li>
-                    <li><b>let</b>: são variaveis escopadas, não podendo ser redeclarada, só te vida util dentro de um escopo, tambeḿ são mutaveis</li>
-                    <li> <b>const</b>: são variaveis com valor imutavel, além disso não podem ser redeclaradas novamente.São mais utilizadas para assurem a variavel
-                     como referencia, tipo arrays, objetos até mesmo receberem funções</li>
-                </ul>
-            </p>
+                    <h4>Variaveis no js</h4>
+                    <p>variaveis nso js podem ser de 3 tipos:
+                    <ul>
+                        <li><b>var</b>: são variaveis globais podem ser redeclaradas e seus valores podem sofrer
+                            mutações no decorrer do programa</li>
+                        <li><b>let</b>: são variaveis escopadas, não podendo ser redeclarada, só te vida util dentro de
+                            um escopo, tambeḿ são mutaveis</li>
+                        <li> <b>const</b>: são variaveis com valor imutavel, além disso não podem ser redeclaradas
+                            novamente.São mais utilizadas para assurem a variavel
+                            como referencia, tipo arrays, objetos até mesmo receberem funções</li>
+                    </ul>
+                    </p>
 
-            <h4>Operadores aritméticos, lógicos e de atribuição</h4>
-            <p> De uma forma breve os operadores aritméticos e logicos no javascript são comum que nem em qualquer linguagem</p>
-            <p>O que ainda tem uma diferença é na igualdade e diferença, no podemos saber se uma determinada coisa é estritamente igual a outra ou seja se é == e se ambos possui o mesmo tipo</p>
-            <ul>
-                <li>+, - , / ,* , **, %</li>
-                <li>operador ternario ?</li>
-                <li>de atribuição é o básico =</li>
-                <li>igualdade e diferença temos ==,>=,>,<,<=, !=, !== e ===</li>
-                <li>lógicos temos && que é o and, e o ou ||</li>
-            </ul>
-            <br/>
-            <h4>Strings - tratamento de conjunto de caracteres</h4>
-            <div id="string"></div>
+                    <h4>Operadores aritméticos, lógicos e de atribuição</h4>
+                    <p> De uma forma breve os operadores aritméticos e logicos no javascript são comum que nem em
+                        qualquer linguagem</p>
+                    <p>O que ainda tem uma diferença é na igualdade e diferença, no podemos saber se uma determinada
+                        coisa é estritamente igual a outra ou seja se é == e se ambos possui o mesmo tipo</p>
+                    <ul>
+                        <li>+, - , / ,* , **, %</li>
+                        <li>operador ternario ?</li>
+                        <li>de atribuição é o básico =</li>
+                        <li>igualdade e diferença temos ==,>=,>,<,<=, !=, !==e===</li>
+                        <li>lógicos temos && que é o and, e o ou ||</li>
+                    </ul>
+                    <br />
+                    <h4>Strings - tratamento de conjunto de caracteres</h4>
+                    <div id="string"></div>
 
-            <h4>Numeros - trabalhando com valores numericos</h4>
-            <div id="numeros"></div>
+                    <h4>Numeros - trabalhando com valores numericos</h4>
+                    <div id="numeros"></div>
 
-            <h4>Arrays no js</h4>
-            <br/>
-            <div id="arrays"></div>
+                    <h4>Arrays no js</h4>
+                    <br />
+                    <div id="arrays"></div>
 
-            <h4>funcoes(function) no js</h4>
-            <br/>
-            <div id="funcoes"></div>
+                    <h4>funcoes(function) no js</h4>
+                    <br />
+                    <div id="funcoes"></div>
 
-            <h4>objetos no js</h4>
-            <br/>
-            <div id="objetos"></div>
+                    <h4>objetos no js</h4>
+                    <br />
+                    <div id="objetos"></div>
 
-            <h4>spred e rest operator</h4>
-            <br/>
-            <div id="spred"></div>
+                    <h4>spred e rest operator</h4>
+                    <br />
+                    <div id="spred"></div>
 
-            <h4>Mais conceitos uteis do js</h4>
-            <br/>
-            <div id="uteis"></div>
+                    <h4>Mais conceitos uteis do js</h4>
+                    <br />
+                    <div id="uteis"></div>
 
-            <h4>Mais conceitos avançados</h4>
-            <ul>
-                <li>javascript assincrono com Async e await</li>
-                <li>Promise</li>
-                <li>Fetch e Axios</li>
-                <li>Trabalhando com local storage</li>
-                <li>Trabalhando com cookies</li>
-            </ul>
-            <br/>
-            <div id="avancando"></div>
+                    <h4>Mais conceitos avançados</h4>
+                    <ul>
+                        <li>javascript assincrono com Async e await</li>
+                        <li>Promise</li>
+                        <li>Fetch e Axios</li>
+                        <li>Trabalhando com local storage</li>
+                        <li>Trabalhando com cookies</li>
+                    </ul>
+                    <br />
+                    <div id="avancando"></div>
 
-            <h4>assincronismo no js</h4>
-            <br/>
-            <div id="assincrono"></div>
+                    <h4>assincronismo no js</h4>
+                    <br />
+                    <div id="assincrono"></div>
 
-            <h4>Promessas js</h4>
-            <br/>
-            <div id="promise"></div>
+                    <h4>Promessas js</h4>
+                    <br />
+                    <div id="promise"></div>
 
-            <h4>Fetch Api e axios js</h4>
-            <br/>
-            <div id="fetch"></div>
+                    <h4>Fetch Api e axios js</h4>
+                    <br />
+                    <div id="fetch"></div>
 
-            <h4>Local Storage</h4>
-            <br/>
-            <div id="local"></div>
+                    <h4>Local Storage</h4>
+                    <br />
+                    <div id="local"></div>
 
-            <h4>session Storage</h4>
-            <br/>
-            <div id="session"></div>
+                    <h4>session Storage</h4>
+                    <br />
+                    <div id="session"></div>
 
-            <h4>Cokies Storage</h4>
-            <br/>
-            <div id="cokies"></div>
+                    <h4>Cokies Storage</h4>
+                    <br />
+                    <div id="cokies"></div>
 
-            <a href="https://docs.google.com/presentation/d/1ultl2ZKtbbVYzpM-M16Z4-626RrVx6L4Xl3l5qRs-ek/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Mais sobre</a>
+                    <a href="https://docs.google.com/presentation/d/1ultl2ZKtbbVYzpM-M16Z4-626RrVx6L4Xl3l5qRs-ek/edit?usp=sharing"
+                        target="_blank" rel="noopener noreferrer">Mais sobre</a>
 
-    </section>
-    
+            </section>
+    </main>
+
     <br />
     <script>
-            $('button').click(function(){
+        $('button').click(function () {
             var txt = document.getElementsByTagName("code")[0];
 
-            $('textarea.hide').text( txt.outerHTML) ;
+            $('textarea.hide').text(txt.outerHTML);
             $("textarea.hide").select();
             document.execCommand('copy');
-            });
+        });
     </script>
     <script src="./js/strings.js"></script>
     <script src="./js/numeros.js"></script>
@@ -296,4 +357,5 @@
     <script src="./js/session.js"></script>
     <script src="./js/cokies.js"></script>
 </body>
+
 </html>

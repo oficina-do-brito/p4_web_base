@@ -4,7 +4,7 @@ document.getElementById('promise').innerHTML = `
         <li>Quando usar, sempre que não temos a noção sobre um retorno de 1 dado;</li>
         <li>Antes das promises a gente usava funções de callback agora podemos criar uma nova promessa e retornar ,e quando receber o valor da função retornada tratamos com .then() e .catch()</li>
         <pre>
-            <code>
+            <code class="code-style">
             //exemplo de uso de promise
             /** Essa função gera um tempo aleatorio */
             const gerarTempo = (min, max) => {

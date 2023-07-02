@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/caderno.css">
+    <link rel="stylesheet" href="css/segundo.css">
     <style>
-        .flexiveis-linha{
+        .flexiveis-linha {
             width: 200px;
             height: 200px;
             background: rgb(212, 209, 214);
             display: flex;
             flex-direction: row;
         }
-        .flexiveis-coluna{
+
+        .flexiveis-coluna {
             width: 200px;
             height: 200px;
             background: rgb(206, 156, 240);
             display: flex;
             flex-direction: column;
         }
-        .flexivel-center{
+
+        .flexivel-center {
             width: 200px;
             height: 200px;
             background: rgb(28, 163, 226);
@@ -28,7 +33,8 @@
             align-items: center;
             justify-content: center;
         }
-        .caixas{
+
+        .caixas {
             width: 80px;
             height: 80px;
             background: red;
@@ -36,25 +42,28 @@
         }
     </style>
 </head>
+
 <body>
-    <h1>Caixas flexiveis</h1>
-    <p>Tornamos um elemento caixa flexivel a partir  da propriedade display: flex</p>
-    <p>Então podemos aplicar alinhamento, e propriedades de ajuste no posicionamento</p>
-    <div class="flexiveis-linha">
-        <div class="caixas"></div>
-        <div class="caixas"></div>
-        <div class="caixas"></div>
-    </div>
+    <main>
+        <h1>Caixas flexiveis</h1>
+        <p>Tornamos um elemento caixa flexivel a partir da propriedade display: flex</p>
+        <p>Então podemos aplicar alinhamento, e propriedades de ajuste no posicionamento</p>
+        <div class="flexiveis-linha">
+            <div class="caixas"></div>
+            <div class="caixas"></div>
+            <div class="caixas"></div>
+        </div>
 
-    <div class="flexiveis-coluna">
-        <div class="caixas"></div>
-        <div class="caixas"></div>
-        <div class="caixas"></div>
-    </div>
+        <div class="flexiveis-coluna">
+            <div class="caixas"></div>
+            <div class="caixas"></div>
+            <div class="caixas"></div>
+        </div>
 
-    <div class="flexivel-center">
-        <div class="caixas"></div>
-    </div>
-    
+        <div class="flexivel-center">
+            <div class="caixas"></div>
+        </div>
+    </main>
 </body>
+
 </html>

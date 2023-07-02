@@ -18,7 +18,7 @@ Em resumo, os cookies são mais adequados para armazenar pequenas quantidades de
 Colocado o cdn simbora pro codigo:
 <ul>
         <pre>
-            <code>
+            <code class="code-style">
                 Cookies.set("id_usuario","1777",{    //options
                     expires:7,                      //tempo de expiração em dias
                     domain:"negochico.com"          //Para qual site o cookie e valido

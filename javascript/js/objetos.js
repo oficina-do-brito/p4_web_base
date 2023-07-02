@@ -3,7 +3,7 @@ document.getElementById('objetos').innerHTML = `
 <ul>
         <li><b>Podemos criar objetos que são diretamente instanciados em variável:</b>:</li>
         <pre>
-            <code>
+            <code class="code-style">
                 const objetoJogador = {
                 nome: "mario",
                 idade: 99,
@@ -19,7 +19,7 @@ document.getElementById('objetos').innerHTML = `
         <p>Outro fator não menos importante é que um objeto pode ter suas propriedades acessadas pela notação de [ ] invés de . e isso é interessante pq podemos fazer coisas cabulosas já que podemos transformar acesso cada vez mais dinâmicos ex:
         </p>
         <pre>
-            <code>
+            <code class="code-style">
             const objeto_j = {nome: "rugson",idade: 88,falar() {
                 console.log(\`falando - Meu nome é \${this.nome} e tenho \${this.idade} anos\`);
               },

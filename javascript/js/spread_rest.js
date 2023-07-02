@@ -2,7 +2,7 @@ document.getElementById('spred').innerHTML = `
 <ul>
         <li><b>Spread </b>é o ato de espalhar conteúdo de variável dentro de outra, é muito útil com arrays, argumentos e por aí em diante, o exemplo mais simples do uso de spread é:</li>
         <pre>
-            <code>
+            <code class="code-style">
             let a = [1, 2, 3, 4, 5, 6, 7];
             let b = [...a];
             console.log(b);            
@@ -11,7 +11,7 @@ document.getElementById('spred').innerHTML = `
 
         <li>A diferença de spread para <b>Rest</b>, é que rest junta e é normalmente usado em parametragem ex básico:</li>
         <pre>
-            <code>
+            <code class="code-style">
                 function sum(...theArgs) {
                     let total = 0;
 
