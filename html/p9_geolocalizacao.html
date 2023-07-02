@@ -1,45 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/css/caderno.css">
+    <link rel="stylesheet" href="../css/css/segundo.css">
 
+</head>
+
+<body>
+    <main>
+        <div id="status"></div>
+        <input type="button" onclick="pegarPosicao()" value="Pegar geolocalização" />
+    </main>
     <script>
 
         var nav, mensagem = null;
-        function pegarPosicao(){
+        function pegarPosicao() {
 
             document.getElementById("status").innerHTML = "aguarde...";
 
-            if(nav == null){
+            if (nav == null) {
                 nav = window.navigator;
             }
 
             var geoloc = nav.geolocation;
-            if(geoloc != null){
-                geoloc.getCurrentPosition(retornaPosition,retornaFalha);
+            if (geoloc != null) {
+                geoloc.getCurrentPosition(retornaPosition, retornaFalha);
             }
 
-            function retornaPosition(posicao){
+            function retornaPosition(posicao) {
                 let latitude = posicao.coords.latitude;
                 let longitude = posicao.coords.longitude;
                 mensagem = `Sucesso foi possivel indentificar sua posição: latitude ${latitude} e longitude ${longitude}`;
                 console.log(mensagem);
             }
-            function retornaFalha(){
+            function retornaFalha() {
                 mensagem = "Não foi possivel indentificar sua posição";
             }
             document.getElementById("status").innerHTML = mensagem;
         }
 
     </script>
-</head>
-<body>
-    
-    <div id="status"></div>
-    <input type="button" onclick="pegarPosicao()" value="Pegar geolocalização" />
-
 </body>
+
 </html>

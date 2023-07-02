@@ -1,42 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
+    <link rel="stylesheet" href="../css/css/caderno.css">
+    <link rel="stylesheet" href="../css/css/segundo.css">
+</head>
 
-    </style>
+<body>
+    <main>
+        <h1>Trabalhando com video</h1>
+        <audio src="audio/Converted.mp3" id="audio"></audio>
+        <form>
+            <input type="button" value="Play" onclick="play()">
+            <input type="button" value="Pause" onclick="pause()">
+            <input type="button" value="Stop" onclick="stop()">
+        </form>
+    </main>
     <script>
         var audio;
 
-        function inicial(){
+        function inicial() {
             audio = document.querySelector("#audio")
         }
-        function play(){
+        function play() {
             audio.play();
         }
-        function pause(){
+        function pause() {
             audio.pause();
         }
-        function stop(){
+        function stop() {
             audio.pause();
             audio.currentTime = 0;
         }
 
-        window.onload  = inicial; //o evento onload diz quando carregado execute tal função
+        window.onload = inicial; //o evento onload diz quando carregado execute tal função
     </script>
-</head>
-<body>
-    
-    <h1>Trabalhando com video</h1>
-    <audio src="audio/Converted.mp3" id="audio"></audio>
-    <form>
-        <input type="button" value="Play" onclick="play()">
-        <input type="button" value="Pause" onclick="pause()">
-        <input type="button" value="Stop" onclick="stop()">
-    </form>
-
 </body>
+
 </html>
