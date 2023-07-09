@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Html</title>
     <link rel="stylesheet" href="../css/css/caderno.css">
     <link rel="stylesheet" href="../css/css/segundo.css">
 </head>
@@ -16,35 +16,52 @@
     <main>
         <h1>Estrutura Basica e semantica de um arquivo html</h1>
         <p>Uma estrutura basica e semantica deve seguir o padronização w3c </p>
-        <p>esse arquivo por exemplo usa a estrutura:</p>
+        <a href="https://www.devmedia.com.br/html-semantico-conheca-os-elementos-semanticos-da-html5/38065"
+            target="_blank">devmedia sobre tags</a> <br>
+        <a href="https://imasters.com.br/desenvolvimento/html-5-2-o-que-nova-recomendacao-do-w3c-traz-de-novidade-para-o-desenvolvimento-web"
+            target="_blank">html 5.2</a> <br>
+        <a href="https://horadecodar.com.br/quando-usar-h1-no-html-seo-html-semantico/" target="_blank">hecomendação do
+            uso de headings</a>
+
+        <p> Basicamente não existe uma forma certa de estruturar um html, mas o basico que devemos respeitar e é
+            primordial para que nosso arquivo seja lido corretamente pela engine
+            do google é que, a gente deve ter um <b><em>h1</em></b> -> titulo principal que represente do que se trata
+            nosso arquivo (pagina) e se quisermos usar mais dele devemos criar seções nesse arquivo e inserilos. Por
+            exemplo usa a estrutura:</p>
         <pre>
         <code class="code-style">
             &lt;header> cabeçalho &lt;/header>
             &lt;nav> navegação &lt;/nav>
+            &lt;main>
             &lt;h1>Estrutura Basica e semantica de um arquivo html, h1 titulo principal da pagina &lt;/h1>
             &lt;p>Uma estrutura basica e semantica deve seguir o padronização w3c &lt;/p>
             &lt;p>esse arquivo por exemplo usa a estrutura: &lt;/p>
 
             &lt;section>
-                &lt;h1>h1, dentro de sessoes podemos ter outro h1, que nãoinfluencia na busca e recomendação da sua page pelo google &lt;/h1>
                 &lt;h2>h2 dasection &lt;/h2>
             &lt;/section>
 
             &lt;section>
-                &lt;h1>Principais problemas &lt;/h1>
+                &lt;h2>Principais problemas &lt;/h2>
             &lt;/section>
+            &lt;/main>
             &lt;aside> conteúdo que é tangencialmente relacionado ao conteúdo exibido na pagina &lt;/aside>
             &lt;footer> rodapé &lt;/footer>
         </code>
+
+        <p>E como eu sei se meu arquivo esta bem estruturado?</p>
+        <p>Bem existem ferramentas que você pode fazer a verificação como o <a href="https://validator.w3.org/#validate_by_upload+with_options" target="_blank"> link do validador de html</a></p>
+        <img src="../assets/checar.png" alt="checando html" style="max-width: 600px; max-height: 400px; margin-left: 0px;"><br>
+        <img src="../assets/checado.png" alt="resposta do check" style="max-width: 600px; max-height: 300px; margin-left: 0px;">
     </pre>
 
         <section>
-            <h1>h1 da section#2</h1>
-            <h2>h2 da section#2</h2>
+            <h3> section#2</h3>
+            <h4>h2 da section#2</h4>
         </section>
 
         <section>
-            <h1>todas as tags</h1>
+            <h2 style="font-size: 50px; margin: 10px;">Todas as tags do html</h2>
             <li>a -> Hiperlink</li>
             <li>abbr -> Abreviação</li>
             <li>address -> Informações de Contato</li>
