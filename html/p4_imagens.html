@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,46 @@
     <link rel="stylesheet" href="../css/css/caderno.css">
     <link rel="stylesheet" href="../css/css/segundo.css">
 </head>
+
 <body>
-    
+    <main>
+        <h1>Imagens no html</h1>
+        <p>a tag de imagem no html possui peculiaridades e quando tratado de resposividade, pode ser um icomodo bem
+            frequente em nossas paginas por que pode
+            encontrar distorçoes entre outros problemas: </p>
+        <pre>
+                <code class="code-style">
+                    &lt;img src="https://picsum.photos/seed/picsum/200/300" alt="imagem aleatoria" srcset="" style=" width: 300px ;height: 200px;">
+                </code>
+        </pre>
+        <p>Outra coisa que devemos fazer para imagensresponsiva descrito nesse artigo <a href="https://www.alura.com.br/artigos/srcset-trabalhando-imagens-responsivas" target="_blank" rel="noopener noreferrer"> artigo alura</a></p>
+        <br>
+        <img src="https://picsum.photos/seed/picsum/200/300" alt="imagem aleatoria" srcset=""
+            style=" width: 300px ;height: 200px;">
+        <br>
+        <p>focando em imagem parte de uma imagem , no centro</p>
+        <img src="https://picsum.photos/seed/picsum/200/300" alt="imagem aleatoria" srcset=""
+            style=" width: 300px ;height: 200px; object-fit: cover; object-position: center;">
+        <br>
+        <p>podemos fazer muitas coisas uteis com a propriedade object-fit das imagens </p>
+        <p> Se usarmos object-fit: cover;a imagem mantém sua proporção e preenche a dimensão dada. A imagem será cortada
+            para caber mesmo quando ela é enorme e queremos que a exibição seja em algo pequeno:</p>
+        <img src="https://picsum.photos/seed/picsum/200/300" alt="imagem aleatoria" srcset=""
+            style=" width: 100px ;height: 100px; object-fit: cover;">
+        <p>Se usarmos object-fit: contain;a imagem mantém sua proporção, mas é redimensionada para caber na dimensão
+            especificada porém sem esticar;</p>
+        <img src="https://picsum.photos/seed/picsum/200/300" alt="imagem aleatoria" srcset=""
+            style=" width: 990px ;height: 900px; object-fit: contain; ">
+        <p>Se usarmos object-fit: fill;a imagem é redimensionada para preencher a dimensão dada. Se necessário, a imagem
+            será esticada ou comprimida para caber :fica baparecendo pixels devido esticamento</p>
+        <img src="https://picsum.photos/seed/picsum/200/300" alt="imagem aleatoria" srcset=""
+            style=" width: 990px ;height: 900px; object-fit: fill;">
+        <p>Se usarmos object-fit: scale-down;a imagem é reduzida para a menor versão de none ou contain:</p>
+        <img src="https://picsum.photos/seed/picsum/200/300" alt="imagem aleatoria" srcset=""
+            style=" width: 990px ;height: 900px; object-fit: scale-down;">
+
+    </main>
+
 </body>
+
 </html>

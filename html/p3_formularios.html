@@ -12,7 +12,7 @@
 
 <body>
     <main>
-        <h1>Um formulario é feito usando a atag</h1>
+        <h1>Um formulario é feito usando a tag &lt;form> </h1>
         <form action="para que url vai ser mandado" method="post">
             <fieldset> <!-- Os campos de formularios são agupados por fildsets e colocando uma legenda-->
                 <legend>inputs de login da app</legend>
@@ -23,16 +23,16 @@
         </form>
         <pre>
         <code class="code-style">
-            &lt;form action="para que url vai ser mandado" method="post" >
-                &lt;fieldset> &lt;!-- Os campos de formularios são agupados por fildsets e colocando uma legenda-->
+            &lt;form action="<i style="color: red;">para que url vai ser mandado</i>" method="<i style="color: red;">POST </i>" >
+                &lt;fieldset> &lt;!-- Os campos de formularios são agupados por fildsets e colocando uma legenda --&gt;
                     &lt;legend>inputs de login da app&lt;/legend>
                     &lt;input type="email" name="eml" id="em">
                     &lt;input type="password" name="pass" id="ps">
-                    &lt;button type="submit">Enviar&lt;/button>
+                    &lt;button type="<i style="color: red;">submit</i>">Enviar&lt;/button>
                 &lt;/fieldset>
             &lt;/form>
 
-            Obs importante todo form ter seus campos nomeados para serem referenciados no backend atraves desse nome, 
+            Obs importante todo form deve ter seus campos nomeados para serem referenciados no backend atraves desse nome então a propriedade de cada input é importanticimo, 
              *todo formulario deve ter 1 botão de submição
              *todo formulario deve ter o metodo de enviar POST ou GET - diferença entre os métodos GET e POST é no envio de parâmetros. 
              *Isso acontece justamente por que o protocolo HTTP define que cada método tem funções diferentes. O GET é usado geralmente 
@@ -41,6 +41,8 @@
         </code>
     </pre>
 
+    <a href="https://mateam.net/html-escape-characters/" target="_blank" rel="noopener noreferrer">escape de caracteres html</a>
+    <br> <br> <br>
 
         <h2>Existem muitos tipos de input</h2>
         <div style="width: 100%; height: auto;">

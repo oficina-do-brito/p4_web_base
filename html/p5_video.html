@@ -20,16 +20,37 @@
 <body>
     <main>
         <h1>Trabalhando com video</h1>
-        <!-- Para colocar video salvo o seu pc -->
-        <!-- <video id="video01" controls>
-        <source>
-    </video> -->
+        <p> Na maioria das vezes quando trabalhamos com videos na web é preferido que a gente não carregue arquivos de
+            video que fiquem armazenadas na maquina a qual esta servindo a aplicação
+            <br>isso ocorre por que 1º gera um trafego grande, 2º por se tratar de arquivos grandes muitas vezes ocrre
+            falhas no envio para o cliente. Mas no entanto não é por isso que não exista como:
+        </p>
+        <p>logo:</p>
+        <p> Para colocar video salvo o seu pc em um arquivo</p>
+        <pre>
+                <code class="code-style">
+                    &lt;video id="video01" controls>
+                        &lt;source src="../assets/video.mp4">
+                    &lt;/video>
+                </code>
+            </pre>
+        <p>A forma mais convecional de fazer é pegar o video de um serviço web que permita compartilhamento por exemplo
+            o <b>youtube</b></p><br>
 
         <iframe width="560" height="315" src="https://www.youtube.com/embed/F5oiibZNEIM" title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-
+            allowfullscreen>
+        </iframe>
+        <pre>
+            <code class="code-style">
+                &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/F5oiibZNEIM" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                &lt;/iframe>
+            </code>
+        </pre>
         <!-- <form>
         <input type="button" value="Play" onclick="play()">
         <input type="button" value="Pause" onclick="pause()">

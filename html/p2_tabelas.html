@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,48 +9,67 @@
     <link rel="stylesheet" href="../css/css/caderno.css">
     <link rel="stylesheet" href="../css/css/segundo.css">
     <style>
-        table{
+        table {
             border-collapse: collapse;
         }
-        table td, table th{
+
+        table td,
+        table th {
             border: 1px solid #ccc;
             padding: 10px;
         }
     </style>
 </head>
+
 <body>
     <main>
-    Dentro das tabelas a gente tem uma estrutura parecida com a do html 
-    isto pq elas tem um:
-     cabeçalho - thead
-     corpo     -
-     rodapé    -
-    Dentro dessas estruturas a gente em linhas e colunas, as linhas são <tr></tr> e as colunas são <td></td> ou <th></th>
-    <table>
-        <thead>
-            <tr>
-                <th>Tabela de compras</th> <th>quantidade</th> <th>preço</th> 
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Maça</td> <td>3</td> <td>3.78</td>
-            </tr>
-            <tr>
-                <td>Feijão</td> <td>3</td> <td>3.78</td>
-            </tr>
-            <tr>
-                <td>Arroz</td> <td>3</td> <td>3.78</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr> 
-                <td>footer</td> <td>footer</td> <td>fotter</td>
-            </tr>
-        </tfoot>
-    </table>
+        <h1>Tabela</h1>
+        <p>
+            Dentro das tabelas a gente tem uma estrutura parecida com a do html,
+            isto por que elas tem um: <br>
+            cabeçalho - thead <br>
+            corpo - tbody<br>
+            rodapé - tfoot<br>
+            Dentro dessas estruturas a gente em linhas e colunas, as linhas são <tr></tr> e as colunas são <td></td> ou
+            <th>
+        </p>
 
-    <pre>
+        </th>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tabela de compras</th>
+                    <th>quantidade</th>
+                    <th>preço</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Maça</td>
+                    <td>3</td>
+                    <td>3.78</td>
+                </tr>
+                <tr>
+                    <td>Feijão</td>
+                    <td>3</td>
+                    <td>3.78</td>
+                </tr>
+                <tr>
+                    <td>Arroz</td>
+                    <td>3</td>
+                    <td>3.78</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>footer</td>
+                    <td>footer</td>
+                    <td>fotter</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <pre>
         <code class="code-style">
             &lt;table>
                 &lt;thead>
@@ -76,6 +96,7 @@
             &lt;/table>
         </code>
     </pre>
-</main>
+    </main>
 </body>
+
 </html>
